@@ -13,34 +13,66 @@ public class God_char : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int direction = (int)(Random.value * 4);
+        move();
+    }
 
-        switch (direction)
+    void move()
+    {
+        if(Input.GetKey(KeyCode.UpArrow))
         {
-            case (0):
-                if (gameObject.transform.position.x < 400)
+            if(Input.GetKey(KeyCode.LeftArrow))
+            {
+                if (gameObject.transform.position.z < 400 && gameObject.transform.position.x < 400)
                 {
-                    gameObject.transform.Translate(new Vector3(1, 0, 0)); //go up
+                    gameObject.transform.Translate(new Vector3(1, 0, 1)); //go up and left
                 }
-                break;
-            case (1):
-                if (gameObject.transform.position.x > 0)
+            }
+            else if(Input.GetKey(KeyCode.RightArrow))
+            {
+                if (gameObject.transform.position.z > 0 && gameObject.transform.position.x < 400)
                 {
-                    gameObject.transform.Translate(new Vector3(-1, 0, 0)); //go down
+                    gameObject.transform.Translate(new Vector3(1, 0, -1)); //go up and right
                 }
-                break;
-            case (2):
-                if (gameObject.transform.position.z < 400)
+            }
+            else if (gameObject.transform.position.x < 400)
+            {
+                gameObject.transform.Translate(new Vector3(1, 0, 0)); //go up
+            }
+        }
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                if (gameObject.transform.position.z < 400 && gameObject.transform.position.x > 0)
                 {
-                    gameObject.transform.Translate(new Vector3(0, 0, 1)); //go left
+                    gameObject.transform.Translate(new Vector3(-1, 0, 1)); //go down and left
                 }
-                break;
-            case (3):
-                if (gameObject.transform.position.z > 0)
+            }
+            else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                if (gameObject.transform.position.z > 0 && gameObject.transform.position.x > 0)
                 {
-                    gameObject.transform.Translate(new Vector3(0, 0, -1)); //go right
+                    gameObject.transform.Translate(new Vector3(-1, 0, -1)); //go down and right
                 }
-                break;
+            }
+            else if(gameObject.transform.position.x > 0)
+            {
+                gameObject.transform.Translate(new Vector3(-1, 0, 0)); //go down
+            }
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            if (gameObject.transform.position.z < 400)
+            {
+                gameObject.transform.Translate(new Vector3(0, 0, 1)); //go left
+            }
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            if (gameObject.transform.position.z > 0)
+            {
+                gameObject.transform.Translate(new Vector3(0, 0, -1)); //go right
+            }
         }
     }
 
