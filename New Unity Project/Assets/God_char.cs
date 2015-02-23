@@ -7,7 +7,7 @@ public class God_char : MonoBehaviour
     void Start()
     {
         gameObject.name = "Kelmatou";
-        gameObject.transform.position.Set(200, 0, 200);
+        gameObject.transform.position = new Vector3(42, 0, 42);
     }
 
     // Update is called once per frame
