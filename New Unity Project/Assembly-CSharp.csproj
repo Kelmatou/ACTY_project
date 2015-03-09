@@ -46,9 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\God_char.cs" />
-     <Compile Include="Assets\IA.cs" />
-     <Compile Include="Assets\main.cs" />
+     <Compile Include="Assets\my_script\God_char.cs" />
+     <Compile Include="Assets\my_script\IA.cs" />
+     <Compile Include="Assets\my_script\Pause_mode.cs" />
+     <Compile Include="Assets\my_script\collision.cs" />
+     <Compile Include="Assets\my_script\main.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
