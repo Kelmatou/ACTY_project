@@ -7,8 +7,9 @@ public class Pause_mode : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
-        
-
+       GUI.Button(new Rect(-500, 200, 250, 50), "RESUME");
+       Time.timeScale = 0;
+       Debug.Log("Bouton crée");
 	}
 
     public void pause()
@@ -26,12 +27,12 @@ public class Pause_mode : MonoBehaviour
     {
         if(GUI.Button(new Rect(-490, 240, 160, 30), "RESUME"))
         {
-            print("unpause"); 
+            Debug.Log("unpause"); 
             unpause();
         }
         else if(GUI.Button(new Rect(-490, 180, 160, 30), "PAUSE"))
         {
-            print("pause");
+            Debug.Log("pause");
             pause();
         }
      }
