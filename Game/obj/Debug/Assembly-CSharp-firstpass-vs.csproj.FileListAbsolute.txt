@@ -10,3 +10,15 @@ C:\Users\Antoine\Documents\ACTY_project\ACTY_project\New Unity Project\Temp\bin\
 C:\Users\Antoine\Documents\ACTY_project\ACTY_project\New Unity Project\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
 C:\Users\Antoine\Documents\ACTY_project\ACTY_project\New Unity Project\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Antoine\Documents\ACTY_project\ACTY_project\New Unity Project\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\obj\Debug\Assembly-CSharp-firstpass.pdb

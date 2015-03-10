@@ -7,8 +7,7 @@ public class main : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
-        GameObject text = GameObject.Find("Display Text");
-        text.guiText.text = "Game";
+
 	}
 	
 	// Update is called once per frame
@@ -25,27 +24,35 @@ public class main : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
-            GameObject text = GameObject.Find("Display Text");
-            if(text.guiText.text != "Pause")
+            if(Time.timeScale == 0)
             {
-                pause(text);
+                unpause();
             }
             else
             {
-                unpause(text);
+                pause();
             }
+            
         }
     }
 
-    void pause(GameObject text)
+    void pause()
     {
-        text.guiText.text = "Pause";
-        //Time.timeScale = 0;
+        GameObject button_pause = GameObject.Find("Button_Pause");
+        GameObject button_unpause = GameObject.Find("Button_unPause");
+        Time.timeScale = 0;
+        //button_unpause.transform.position = new Vector3(94.5f, 704.5f, 0);
+        button_unpause.transform.position = new Vector3(94.5f, 1024.5f, 0); // 1920x1080
+        button_pause.transform.position = new Vector3(7166, 6436, 0);
     }
 
-    void unpause(GameObject text)
+    void unpause()
     {
-        text.guiText.text = "Game";
-        //Time.timeScale = 1;
+        GameObject button_pause = GameObject.Find("Button_Pause");
+        GameObject button_unpause = GameObject.Find("Button_unPause");
+        Time.timeScale = 1;
+        //button_pause.transform.position = new Vector3(94.5f, 704.5f, 0); //1024x768
+        button_pause.transform.position = new Vector3(94.5f, 1024.5f, 0); // 1920x1080
+        button_unpause.transform.position = new Vector3(7166, 6436, 0);
     }
 }
