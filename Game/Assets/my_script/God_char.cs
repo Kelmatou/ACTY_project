@@ -184,7 +184,7 @@ public class God_char : MonoBehaviour
         switch(direction)
         {
             case("N"):
-                if(this.transform.position.x + 10 <= 400)
+                if(this.transform.position.x + 10 <= 400 && this.transform.position.z <= 395 && this.transform.position.z >= 5)
                 {
                     build((int)this.transform.position.x + 5, (int)this.transform.position.z);
                 }
@@ -214,7 +214,7 @@ public class God_char : MonoBehaviour
                 }
                 break;
             case ("S"):
-                if (this.transform.position.x - 10 >= 0)
+                if (this.transform.position.x - 10 >= 0 && this.transform.position.z <= 395 && this.transform.position.z >= 5)
                 {
                     build((int)this.transform.position.x - 5, (int)this.transform.position.z);
                 }
@@ -244,7 +244,7 @@ public class God_char : MonoBehaviour
                 }
                 break;
             case ("W"):
-                if (this.transform.position.z + 10 <= 400)
+                if (this.transform.position.z + 10 <= 400 && this.transform.position.x <= 395 && this.transform.position.x >= 5)
                 {
                     build((int)this.transform.position.x, (int)this.transform.position.z + 5);
                 }
@@ -254,7 +254,7 @@ public class God_char : MonoBehaviour
                 }
                 break;
             case ("E"):
-                if (this.transform.position.z - 10 >= 0)
+                if (this.transform.position.z - 10 >= 0 && this.transform.position.x <= 395 && this.transform.position.x >= 5)
                 {
                     build((int)this.transform.position.x, (int)this.transform.position.z - 5);
                 }

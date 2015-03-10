@@ -18,7 +18,7 @@ Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Gam
 Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.057 seconds
+- Completed reload, in  0.094 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -30,3 +30,141 @@ The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1769)
 
+Pas assez de place pour construire au point x = 141, z = -2 en direction NE
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 142, z = -3 en direction NE
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 142, z = -3 en direction NE
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 196, z = 4 en direction N
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 239, z = 0 en direction NE
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 318, z = 2 en direction N
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 348, z = 2 en direction N
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 399, z = 9 en direction N
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 405, z = 18 en direction NW
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 400, z = 19 en direction W
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 400, z = 34 en direction W
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 400, z = 49 en direction W
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 397, z = 167 en direction W
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 397, z = 180 en direction W
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 397, z = 194 en direction W
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 397, z = 208 en direction W
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 405, z = 219 en direction NW
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 405, z = 219 en direction NW
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Terrain splat 2 is null.
+ 
+(Filename:  Line: 140)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1769)
+
+UnloadTime: 7.943335 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 228.
+Total: 4.000259 ms (FindLiveObjects: 0.021993 ms CreateObjectMapping: 0.018327 ms MarkObjects: 0.260990 ms  DeleteObjects: 2.753958 ms)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+Pas assez de place pour construire au point x = 50, z = 4 en direction E
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 50, z = -3 en direction E
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 55, z = -3 en direction NE
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 89, z = 4 en direction NE
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 96, z = -3 en direction NE
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 132, z = 4 en direction N
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 144, z = 4 en direction N
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 168, z = 3 en direction NE
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 178, z = 2 en direction N
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Pas assez de place pour construire au point x = 190, z = 2 en direction N
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1769)
+
+UnloadTime: 1.630821 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 228.
+Total: 3.016048 ms (FindLiveObjects: 0.015395 ms CreateObjectMapping: 0.013929 ms MarkObjects: 0.208938 ms  DeleteObjects: 2.049798 ms)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
