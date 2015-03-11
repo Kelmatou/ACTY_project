@@ -15,7 +15,7 @@ public class Bouttons : MonoBehaviour {
 
     public void StartGame()
     {
-        Application.LoadLevel("Game");
+        Application.LoadLevel("map_1");
     }
 
     public void QuitGame()
