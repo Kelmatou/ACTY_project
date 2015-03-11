@@ -46,6 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Spotlight\Spotlight1.cs" />
+     <Compile Include="Assets\Spotlight\Spotlight2.cs" />
+     <Compile Include="Assets\Spotlight\Spotlight3.cs" />
+     <Compile Include="Assets\Spotlight\Spotlight4.cs" />
+     <Compile Include="Assets\my_script\Bouttons.cs" />
      <Compile Include="Assets\my_script\God_char.cs" />
      <Compile Include="Assets\my_script\IA.cs" />
      <Compile Include="Assets\my_script\button_managment.cs" />
