@@ -18,7 +18,22 @@ Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Gam
 Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.072 seconds
+- Completed reload, in  0.038 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\System.dll (this message is harmless)
+WARNING: Shader Unsupported: 'Hidden/Nature/Tree Creator Leaves Optimized' - Pass '' shader state not supported
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 2.610267 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 327.
+Total: 0.774172 ms (FindLiveObjects: 0.009897 ms CreateObjectMapping: 0.007331 ms MarkObjects: 0.100437 ms  DeleteObjects: 0.361060 ms)
+
+Trigger enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
