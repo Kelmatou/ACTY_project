@@ -23,8 +23,8 @@ public class Spotlight3 : MonoBehaviour
     }
     void Update()
     {
-        transform.Translate(Vector3.up);
-        transform.Translate(Vector3.right * 3 / 4);
+        transform.Translate(Vector3.up / 2);
+        transform.Translate(Vector3.right / 4);
         i++;
         if (i > 400)
         {
