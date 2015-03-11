@@ -2,39 +2,57 @@ Initialize engine version: 4.6.2f1 (bd99309c2ad7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce 840M (ID=0x1341)
+    Renderer: NVIDIA GeForce GTX 860M   (ID=0x1392)
     Vendor:   NVIDIA
     VRAM:     1972 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.209 seconds
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.081 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\System.Core.dll (this message is harmless)
 WARNING: Shader Unsupported: 'Hidden/Nature/Tree Creator Leaves Optimized' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-Platform assembly: C:\Users\Cyril Lemaître\Documents\PROJET\ACTY_project\Game\Game_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\System.dll (this message is harmless)
 Trigger enter
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-Trigger enter
+Terrain splat 2 is null.
  
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+(Filename:  Line: 140)
 
-Trigger enter
+The referenced script on this Behaviour is missing!
  
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+(Filename:  Line: 1769)
 
+UnloadTime: 6.493228 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 227.
+Total: 3.564787 ms (FindLiveObjects: 0.019427 ms CreateObjectMapping: 0.015395 ms MarkObjects: 0.206739 ms  DeleteObjects: 2.518261 ms)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1769)
+
+UnloadTime: 1.854055 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 227.
+Total: 3.506504 ms (FindLiveObjects: 0.019061 ms CreateObjectMapping: 0.017228 ms MarkObjects: 0.263189 ms  DeleteObjects: 2.327650 ms)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
