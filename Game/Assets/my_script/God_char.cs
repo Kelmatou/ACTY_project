@@ -158,7 +158,7 @@ public class God_char : MonoBehaviour
         if(Input.GetMouseButtonDown(1))
         {
             auto_path_x = Input.mousePosition.x;
-            auto_path_z = Input.mousePosition.z;
+            auto_path_z = Input.mousePosition.y;
 
             if(auto_path_x > 400)
             {
