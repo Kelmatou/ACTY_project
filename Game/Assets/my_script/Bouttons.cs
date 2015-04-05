@@ -6,7 +6,7 @@ public class Bouttons : MonoBehaviour
 
     public void StartGame()
     {
-        GameObject bouton_jouer = GameObject.Find("Bouton_jouer");
+        /*GameObject bouton_jouer = GameObject.Find("Bouton_jouer");
         GameObject bouton_quitter = GameObject.Find("Bouton_quitter");
         GameObject bouton_map1 = GameObject.Find("Bouton_map1");
         GameObject bouton_map2 = GameObject.Find("Bouton_map2");
@@ -15,7 +15,8 @@ public class Bouttons : MonoBehaviour
         bouton_quitter.transform.position = new Vector3(7166, 6436, 0);
         bouton_map1.transform.position = new Vector3(0, 10, 0);
         bouton_map2.transform.position = new Vector3(0, -20, 0);
-        bouton_map3.transform.position = new Vector3(0, -50, 0);
+        bouton_map3.transform.position = new Vector3(0, -50, 0);*/
+        Application.LoadLevel("map_1_selection");
         
     }
 

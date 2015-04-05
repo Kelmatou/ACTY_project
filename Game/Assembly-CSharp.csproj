@@ -57,6 +57,7 @@
      <Compile Include="Assets\my_script\change_map.cs" />
      <Compile Include="Assets\my_script\collision.cs" />
      <Compile Include="Assets\my_script\main.cs" />
+     <Compile Include="Assets\my_script\map_selection.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />

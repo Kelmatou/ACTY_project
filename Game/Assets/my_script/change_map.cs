@@ -23,5 +23,9 @@ public class change_map : MonoBehaviour
         {
             Application.LoadLevel("map_3");
         }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            Application.LoadLevel("MainMenu");
+        }
     }
 }

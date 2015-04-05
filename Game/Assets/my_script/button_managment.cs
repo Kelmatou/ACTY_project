@@ -8,7 +8,7 @@ public class button_managment : MonoBehaviour
     {
         if (this.name == "Button_Pause" && Time.timeScale == 1)
         {
-            this.transform.position = new Vector3(94.5f, 1024.5f, 0);
+            this.transform.position = new Vector3(80, 720, 0);
         }
         else if (this.name == "Button_Pause")
         {
@@ -17,7 +17,7 @@ public class button_managment : MonoBehaviour
 
         if (this.name == "Button_unPause" && Time.timeScale == 0)
         {
-            this.transform.position = new Vector3(94.5f, 1024.5f, 0);
+            this.transform.position = new Vector3(80, 720, 0);
         }
         else if (this.name == "Button_unPause")
         {
@@ -36,9 +36,7 @@ public class button_managment : MonoBehaviour
 
     public void move_in_screen()
     {
-        //this.transform.position = new Vector3(94.5f, 474.5f, 0); ne fonctionne pas apres compilation
-        //this.transform.position = new Vector3(94.5f, 704.5f, 0); //1024x768
-        this.transform.position = new Vector3(94.5f, 1024.5f, 0); // 1920x1080
+        this.transform.position = new Vector3(80, 720, 0);
         if (this.name == "Button_Pause")
         {
             Time.timeScale = 1;
