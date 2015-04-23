@@ -6,22 +6,38 @@ public class button_managment : MonoBehaviour
 
     void Start()
     {
-        if (this.name == "Button_Pause" && Time.timeScale == 1)
+        if(this.name == "Button_Pause")
         {
-            this.transform.position = new Vector3(80, 720, 0);
-        }
-        else if (this.name == "Button_Pause")
-        {
-            this.transform.position = new Vector3(7166, 6436, 0);
-        }
-
-        if (this.name == "Button_unPause" && Time.timeScale == 0)
-        {
-            this.transform.position = new Vector3(80, 720, 0);
+            if(Time.timeScale == 1)
+            {
+                this.transform.position = new Vector3(80, 720, 0);
+            }
+            else
+            {
+                this.transform.position = new Vector3(7166, 6436, 0);
+            }
         }
         else if (this.name == "Button_unPause")
         {
-            this.transform.position = new Vector3(7166, 6436, 0);
+            if (Time.timeScale == 0)
+            {
+                this.transform.position = new Vector3(80, 720, 0);
+            }
+            else
+            {
+                this.transform.position = new Vector3(7166, 6436, 0);
+            }
+        }
+        else if (this.name == "Button_Menu")
+        {
+            if (Time.timeScale == 0)
+            {
+                this.transform.position = new Vector3(500, 670, 0);
+            }
+            else
+            {
+                this.transform.position = new Vector3(7166, 6436, 0);
+            }
         }
     }
 
@@ -40,6 +56,14 @@ public class button_managment : MonoBehaviour
         if (this.name == "Button_Pause")
         {
             Time.timeScale = 1;
+        }
+    }
+
+    public void creat_pause_menu()
+    {
+        if (this.name == "Button_Menu")
+        {
+            this.transform.position = new Vector3(500, 670, 0);
         }
     }
 }

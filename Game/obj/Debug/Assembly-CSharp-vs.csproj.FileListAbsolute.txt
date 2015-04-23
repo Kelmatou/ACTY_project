@@ -19,10 +19,12 @@ C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\UnityEd
 C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\UnityEngine.dll
 C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\UnityEngine.UI.dll
 C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\Mono.Cecil.dll
-C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\nunit.framework.dll
 C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\Unity.DataContract.dll
 C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\ICSharpCode.NRefactory.dll
 C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
 C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\obj\Debug\Assembly-CSharp.dll
 C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Temp\bin\Debug\Unity.CecilTools.dll

@@ -4,8 +4,8 @@ using System.Collections;
 public class God_char : MonoBehaviour
 {
     float movespeed;
-    float auto_path_x;
-    float auto_path_z;
+    double auto_path_x;
+    double auto_path_z;
     string direction;
 
     // Use this for initialization
@@ -157,8 +157,9 @@ public class God_char : MonoBehaviour
 
         if(Input.GetMouseButtonDown(1))
         {
-            auto_path_x = Input.mousePosition.x;
-            auto_path_z = Input.mousePosition.y;
+            auto_path_x = System.Math.Round(Input.mousePosition.x, 0);
+            auto_path_z = System.Math.Round(Input.mousePosition.y, 0);
+            Debug.Log("pos x: " + auto_path_x + " - pos y: " + auto_path_z);
 
             if(auto_path_x > 400)
             {
@@ -179,7 +180,7 @@ public class God_char : MonoBehaviour
         }
     }
 
-    void creat_building(float mouse_x, float mouse_z)
+    void creat_building(double mouse_x, double mouse_z)
     {
         switch(direction)
         {
@@ -272,8 +273,8 @@ public class God_char : MonoBehaviour
     void build(int x, int z)
     {
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.AddComponent("BoxCollider");
-        cube.AddComponent("collision");
+        cube.AddComponent<BoxCollider>();
+        cube.AddComponent<collision>();
         cube.name = "house";
         cube.transform.transform.localScale = new Vector3(10, 10, 10);
         cube.transform.position = new Vector3(x, 5, z);
