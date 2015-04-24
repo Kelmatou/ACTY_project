@@ -22,18 +22,14 @@ public class God_char : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.timeScale != 0)
+        if (Time.timeScale != 0)
         {
             move(movespeed);
-            if(auto_path_x != -1 && auto_path_z != -1)
+            if (auto_path_x != -1 && auto_path_z != -1)
             {
                 auto_path();
             }
-            if(Input.GetMouseButtonDown(0))
-            {
-                creat_building(Input.mousePosition.x, Input.mousePosition.z);
-            }
-        } 
+        }  
     }
     
     void auto_path()
@@ -180,110 +176,267 @@ public class God_char : MonoBehaviour
         }
     }
 
-    void creat_building(double mouse_x, double mouse_z)
-    {
-        switch(direction)
-        {
-            case("N"):
-                if(this.transform.position.x + 10 <= 400 && this.transform.position.z <= 395 && this.transform.position.z >= 5)
-                {
-                    build((int)this.transform.position.x + 5, (int)this.transform.position.z);
-                }
-                else
-                {
-                    Debug.Log("Pas assez de place pour construire au point x = " + (this.transform.position.x + 5) + ", z = " + this.transform.position.z + " en direction " + direction);
-                }
-                break;
-            case ("NW"):
-                if (this.transform.position.x + 10 <= 400 && this.transform.position.z + 10 <= 400)
-                {
-                    build((int)this.transform.position.x + 5, (int)this.transform.position.z + 5);
-                }
-                else
-                {
-                    Debug.Log("Pas assez de place pour construire au point x = " + (this.transform.position.x + 5) + ", z = " + (this.transform.position.z + 5) + " en direction " + direction);
-                }
-                break;
-            case ("NE"):
-                if (this.transform.position.x + 10 <= 400 && this.transform.position.z - 10 >= 0)
-                {
-                    build((int)this.transform.position.x + 5, (int)this.transform.position.z - 5);
-                }
-                else
-                {
-                    Debug.Log("Pas assez de place pour construire au point x = " + (this.transform.position.x + 5) + ", z = " + (this.transform.position.z - 5) + " en direction " + direction);
-                }
-                break;
-            case ("S"):
-                if (this.transform.position.x - 10 >= 0 && this.transform.position.z <= 395 && this.transform.position.z >= 5)
-                {
-                    build((int)this.transform.position.x - 5, (int)this.transform.position.z);
-                }
-                else
-                {
-                    Debug.Log("Pas assez de place pour construire au point x = " + (this.transform.position.x - 5) + ", z = " + this.transform.position.z + " en direction " + direction);
-                }
-                break;
-            case ("SW"):
-                if (this.transform.position.x - 10 >= 0 && this.transform.position.z + 10 <= 400)
-                {
-                    build((int)this.transform.position.x - 5, (int)this.transform.position.z + 5);
-                }
-                else
-                {
-                    Debug.Log("Pas assez de place pour construire au point x = " + (this.transform.position.x - 5) + ", z = " + (this.transform.position.z + 5) + " en direction " + direction);
-                }
-                break;
-            case ("SE"):
-                if (this.transform.position.x - 10 >= 0 && this.transform.position.z - 10 >= 0)
-                {
-                    build((int)this.transform.position.x - 5, (int)this.transform.position.z - 5);
-                }
-                else
-                {
-                    Debug.Log("Pas assez de place pour construire au point x = " + (this.transform.position.x - 5) + ", z = " + (this.transform.position.z - 5) + " en direction " + direction);
-                }
-                break;
-            case ("W"):
-                if (this.transform.position.z + 10 <= 400 && this.transform.position.x <= 395 && this.transform.position.x >= 5)
-                {
-                    build((int)this.transform.position.x, (int)this.transform.position.z + 5);
-                }
-                else
-                {
-                    Debug.Log("Pas assez de place pour construire au point x = " + this.transform.position.x + ", z = " + (this.transform.position.z + 5) + " en direction " + direction);
-                }
-                break;
-            case ("E"):
-                if (this.transform.position.z - 10 >= 0 && this.transform.position.x <= 395 && this.transform.position.x >= 5)
-                {
-                    build((int)this.transform.position.x, (int)this.transform.position.z - 5);
-                }
-                else
-                {
-                    Debug.Log("Pas assez de place pour construire au point x = " + this.transform.position.x + ", z = " + (this.transform.position.z - 5) + " en direction " + direction);
-                }
-                break;
-            default:
-                Debug.Log("Direction inconnue");
-                break;
-        }
-    }
-
-    void build(int x, int z)
-    {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.AddComponent<BoxCollider>();
-        cube.AddComponent<collision>();
-        cube.name = "house";
-        cube.transform.transform.localScale = new Vector3(10, 10, 10);
-        cube.transform.position = new Vector3(x, 5, z);
-    }
-
     void reset_auto_path()
     {
         auto_path_x = -1;
         auto_path_z = -1;
     }
 
+    bool can_be_build(int size_x, int size_z)
+    {
+        switch (direction)
+        {
+            case ("N"):
+                if (this.transform.position.x + size_x <= 400 && this.transform.position.z <= 400 - size_z / 2 && this.transform.position.z >= size_z / 2)
+                {
+                    return (true);
+                }
+                else
+                {
+                    Debug.Log("Pas assez de place pour construire au point x = " + (this.transform.position.x + size_x/2) + ", z = " + this.transform.position.z + " en direction " + direction);
+                }
+                break;
+            case ("NW"):
+                if (this.transform.position.x + size_x <= 400 && this.transform.position.z + size_z <= 400)
+                {
+                    return (true);
+                }
+                else
+                {
+                    Debug.Log("Pas assez de place pour construire au point x = " + (this.transform.position.x + size_x / 2) + ", z = " + (this.transform.position.z + size_z / 2) + " en direction " + direction);
+                }
+                break;
+            case ("NE"):
+                if (this.transform.position.x + size_x <= 400 && this.transform.position.z - size_z >= 0)
+                {
+                    return (true);
+                }
+                else
+                {
+                    Debug.Log("Pas assez de place pour construire au point x = " + (this.transform.position.x + size_x / 2) + ", z = " + (this.transform.position.z - size_z / 2) + " en direction " + direction);
+                }
+                break;
+            case ("S"):
+                if (this.transform.position.x - size_x >= 0 && this.transform.position.z <= 400 - size_z / 2 && this.transform.position.z >= size_z / 2)
+                {
+                    return (true);
+                }
+                else
+                {
+                    Debug.Log("Pas assez de place pour construire au point x = " + (this.transform.position.x - size_x / 2) + ", z = " + this.transform.position.z + " en direction " + direction);
+                }
+                break;
+            case ("SW"):
+                if (this.transform.position.x - size_x >= 0 && this.transform.position.z + size_z <= 400)
+                {
+                    return (true);
+                }
+                else
+                {
+                    Debug.Log("Pas assez de place pour construire au point x = " + (this.transform.position.x - size_x / 2) + ", z = " + (this.transform.position.z + size_z / 2) + " en direction " + direction);
+                }
+                break;
+            case ("SE"):
+                if (this.transform.position.x - size_x >= 0 && this.transform.position.z - size_z >= 0)
+                {
+                    return (true);
+                }
+                else
+                {
+                    Debug.Log("Pas assez de place pour construire au point x = " + (this.transform.position.x - size_x / 2) + ", z = " + (this.transform.position.z - size_z / 2) + " en direction " + direction);
+                }
+                break;
+            case ("W"):
+                if (this.transform.position.z + size_z <= 400 && this.transform.position.x <= 400 - size_x / 2 && this.transform.position.x >= size_x / 2)
+                {
+                    return (true);
+                }
+                else
+                {
+                    Debug.Log("Pas assez de place pour construire au point x = " + this.transform.position.x + ", z = " + (this.transform.position.z + size_z / 2) + " en direction " + direction);
+                }
+                break;
+            case ("E"):
+                if (this.transform.position.z - size_z >= 0 && this.transform.position.x <= 400 - size_x / 2 && this.transform.position.x >= size_x / 2)
+                {
+                    return (true);
+                }
+                else
+                {
+                    Debug.Log("Pas assez de place pour construire au point x = " + this.transform.position.x + ", z = " + (this.transform.position.z - size_z / 2) + " en direction " + direction);
+                }
+                break;
+            default:
+                Debug.Log("Direction inconnue");
+                break;
+        }
+        return (false);
+    }
+
+    public void build_building(string tag)
+    {
+        if(Time.timeScale == 1)
+        {
+            switch (tag)
+            {
+                case ("Donjon"):
+                    if (can_be_build(5, 5))
+                    {
+                        build_donjon((int)this.transform.position.x, (int)this.transform.position.z);
+                    }
+                    break;
+                case ("Tower"):
+                    if (can_be_build(2, 2))
+                    {
+                        build_tour_de_garde((int)this.transform.position.x, (int)this.transform.position.z);
+                    }
+                    break;
+                case ("Wall"):
+                    if (can_be_build(1, 1))
+                    {
+                        build_rempart((int)this.transform.position.x, (int)this.transform.position.z);
+                    }
+                    break;
+                case ("Temple"):
+                    if (can_be_build(4, 5))
+                    {
+                        build_temple((int)this.transform.position.x, (int)this.transform.position.z);
+                    }
+                    break;
+                case ("Lab"):
+                    if (can_be_build(3, 4))
+                    {
+                        build_laboratoire((int)this.transform.position.x, (int)this.transform.position.z);
+                    }
+                    break;
+                case ("Bank"):
+                    if (can_be_build(3, 3))
+                    {
+                        build_banque((int)this.transform.position.x, (int)this.transform.position.z);
+                    }
+                    break;
+                case ("Mine"):
+                    if (can_be_build(2, 2))
+                    {
+                        build_mine_zinc((int)this.transform.position.x, (int)this.transform.position.z);
+                    }
+                    break;
+                case ("Carrier"):
+                    if (can_be_build(2, 2))
+                    {
+                        build_carriere_roche_volcanique((int)this.transform.position.x, (int)this.transform.position.z);
+                    }
+                    break;
+                case ("Center"):
+                    if (can_be_build(2, 2))
+                    {
+                        build_centre_extraction_uranium((int)this.transform.position.x, (int)this.transform.position.z);
+                    }
+                    break;
+                default:
+                    Debug.Log("BATIMENT INCONNU: " + tag);
+                    break;
+            }
+        }
+    }
+
+    void build_donjon(int x, int z)
+    {
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.AddComponent<BoxCollider>();
+        cube.AddComponent<collision>();
+        cube.name = "Donjon";
+        cube.transform.transform.localScale = new Vector3(5, 14, 5);
+        cube.transform.position = new Vector3(x, 7, z);
+    }
+
+    void build_tour_de_garde(int x, int z)
+    {
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.AddComponent<BoxCollider>();
+        cube.AddComponent<collision>();
+        cube.name = "Tower";
+        cube.transform.transform.localScale = new Vector3(2, 12, 2);
+        cube.transform.position = new Vector3(x, 6, z);
+    }
+
+    void build_caserne(int x, int z)
+    {
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.AddComponent<BoxCollider>();
+        cube.AddComponent<collision>();
+        cube.name = "Casern";
+        cube.transform.transform.localScale = new Vector3(4, 10, 4);
+        cube.transform.position = new Vector3(x, 5, z);
+    }
+
+    void build_rempart(int x, int z)
+    {
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.AddComponent<BoxCollider>();
+        cube.AddComponent<collision>();
+        cube.name = "Wall";
+        cube.transform.transform.localScale = new Vector3(1, 12, 1);
+        cube.transform.position = new Vector3(x, 6, z);
+    }
+
+    void build_temple(int x, int z)
+    {
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.AddComponent<BoxCollider>();
+        cube.AddComponent<collision>();
+        cube.name = "Temple";
+        cube.transform.transform.localScale = new Vector3(4, 12, 5);
+        cube.transform.position = new Vector3(x, 6, z);
+    }
+
+    void build_laboratoire(int x, int z)
+    {
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.AddComponent<BoxCollider>();
+        cube.AddComponent<collision>();
+        cube.name = "Lab";
+        cube.transform.transform.localScale = new Vector3(3, 10, 4);
+        cube.transform.position = new Vector3(x, 5, z);
+    }
+
+    void build_banque(int x, int z)
+    {
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.AddComponent<BoxCollider>();
+        cube.AddComponent<collision>();
+        cube.name = "Bank";
+        cube.transform.transform.localScale = new Vector3(3, 10, 3);
+        cube.transform.position = new Vector3(x, 5, z);
+    }
+
+    void build_mine_zinc(int x, int z)
+    {
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.AddComponent<BoxCollider>();
+        cube.AddComponent<collision>();
+        cube.name = "Mine";
+        cube.transform.transform.localScale = new Vector3(2, 6, 2);
+        cube.transform.position = new Vector3(x, 3, z);
+    }
+
+    void build_carriere_roche_volcanique(int x, int z)
+    {
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.AddComponent<BoxCollider>();
+        cube.AddComponent<collision>();
+        cube.name = "Carrier";
+        cube.transform.transform.localScale = new Vector3(2, 6, 2);
+        cube.transform.position = new Vector3(x, 3, z);
+    }
+
+    void build_centre_extraction_uranium(int x, int z)
+    {
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.AddComponent<BoxCollider>();
+        cube.AddComponent<collision>();
+        cube.name = "Center";
+        cube.transform.transform.localScale = new Vector3(2, 8, 2);
+        cube.transform.position = new Vector3(x, 4, z);
+    }
 }
