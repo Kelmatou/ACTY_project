@@ -40,8 +40,10 @@ public class main : MonoBehaviour
     {
         GameObject button_pause = GameObject.Find("Button_Pause");
         GameObject button_unpause = GameObject.Find("Button_unPause");
+        GameObject button_Menu = GameObject.Find("Button_Menu");
         Time.timeScale = 0;
         button_unpause.transform.position = new Vector3(80, 720, 0);
+        button_Menu.transform.position = new Vector3(500, 670, 0);
         button_pause.transform.position = new Vector3(7166, 6436, 0);
     }
 
@@ -49,8 +51,10 @@ public class main : MonoBehaviour
     {
         GameObject button_pause = GameObject.Find("Button_Pause");
         GameObject button_unpause = GameObject.Find("Button_unPause");
+        GameObject button_Menu = GameObject.Find("Button_Menu");
         Time.timeScale = 1;
         button_pause.transform.position = new Vector3(80, 720, 0);
         button_unpause.transform.position = new Vector3(7166, 6436, 0);
+        button_Menu.transform.position = new Vector3(7166, 6436, 0);
     }
 }

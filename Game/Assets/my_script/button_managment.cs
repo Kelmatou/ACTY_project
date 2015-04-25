@@ -41,14 +41,7 @@ public class button_managment : MonoBehaviour
         }
         else
         {
-            if(Time.timeScale == 1)
-            {
-                creat_game_inteface();
-            }
-            else
-            {
-                move_out_screen();
-            }
+            creat_game_inteface();
         }
     }
 

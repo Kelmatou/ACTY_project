@@ -18,7 +18,7 @@ Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Gam
 Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.064 seconds
+- Completed reload, in  0.102 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -28,48 +28,32 @@ Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Gam
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
 Shader 'Nature/Terrain/Specular': fallback shader 'Nature/Terrain/Diffuse' not found
 Shader 'Nature/Terrain/Standard': fallback shader 'Nature/Terrain/Diffuse' not found
-UnloadTime: 3.732676 ms
+UnloadTime: 14.262468 ms
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 346.
-Total: 0.454900 ms (FindLiveObjects: 0.045086 ms CreateObjectMapping: 0.014662 ms MarkObjects: 0.182180 ms  DeleteObjects: 0.212238 ms)
+Total: 0.828791 ms (FindLiveObjects: 0.049485 ms CreateObjectMapping: 0.030424 ms MarkObjects: 0.285183 ms  DeleteObjects: 0.463331 ms)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
 TerrainData is missing splat texture 2.
  
 (Filename:  Line: 208)
 
-UnloadTime: 0.623517 ms
+UnloadTime: 0.576231 ms
 
 Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 257.
-Total: 1.153196 ms (FindLiveObjects: 0.021627 ms CreateObjectMapping: 0.011363 ms MarkObjects: 0.147356 ms  DeleteObjects: 0.972849 ms)
+Total: 3.023017 ms (FindLiveObjects: 0.041054 ms CreateObjectMapping: 0.048752 ms MarkObjects: 0.388919 ms  DeleteObjects: 2.542824 ms)
 
 TerrainData is missing splat texture 2.
  
 (Filename:  Line: 208)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.510984 ms
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 257.
-Total: 1.110675 ms (FindLiveObjects: 0.024926 ms CreateObjectMapping: 0.012096 ms MarkObjects: 0.162385 ms  DeleteObjects: 0.910534 ms)
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.510984 ms
+UnloadTime: 1.666013 ms
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 344.
-Total: 0.909434 ms (FindLiveObjects: 0.026025 ms CreateObjectMapping: 0.015028 ms MarkObjects: 0.177414 ms  DeleteObjects: 0.689865 ms)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.567800 ms
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 467.
-Total: 0.494488 ms (FindLiveObjects: 0.019061 ms CreateObjectMapping: 0.013929 ms MarkObjects: 0.211871 ms  DeleteObjects: 0.249627 ms)
-
-Trigger enter
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Trigger enter
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 380.
+Total: 1.601865 ms (FindLiveObjects: 0.065980 ms CreateObjectMapping: 0.049485 ms MarkObjects: 0.677035 ms  DeleteObjects: 0.807897 ms)
 
