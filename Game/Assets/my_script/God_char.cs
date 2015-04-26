@@ -291,6 +291,12 @@ public class God_char : MonoBehaviour
                         build_tour_de_garde((int)this.transform.position.x, (int)this.transform.position.z);
                     }
                     break;
+                case ("Casern"):
+                    if (can_be_build(2, 2))
+                    {
+                        build_caserne((int)this.transform.position.x, (int)this.transform.position.z);
+                    }
+                    break;
                 case ("Wall"):
                     if (can_be_build(1, 1))
                     {

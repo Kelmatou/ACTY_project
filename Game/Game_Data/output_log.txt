@@ -18,7 +18,7 @@ Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Gam
 Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.102 seconds
+- Completed reload, in  0.047 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -28,32 +28,106 @@ Platform assembly: C:\Users\Antoine\Documents\ACTY_project\ACTY_project\Game\Gam
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
 Shader 'Nature/Terrain/Specular': fallback shader 'Nature/Terrain/Diffuse' not found
 Shader 'Nature/Terrain/Standard': fallback shader 'Nature/Terrain/Diffuse' not found
-UnloadTime: 14.262468 ms
+UnloadTime: 3.411570 ms
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 346.
-Total: 0.828791 ms (FindLiveObjects: 0.049485 ms CreateObjectMapping: 0.030424 ms MarkObjects: 0.285183 ms  DeleteObjects: 0.463331 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 347.
+Total: 0.389652 ms (FindLiveObjects: 0.023093 ms CreateObjectMapping: 0.012829 ms MarkObjects: 0.141858 ms  DeleteObjects: 0.211871 ms)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-TerrainData is missing splat texture 2.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.744849 ms
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 533.
+Total: 0.507685 ms (FindLiveObjects: 0.024559 ms CreateObjectMapping: 0.012463 ms MarkObjects: 0.238630 ms  DeleteObjects: 0.231299 ms)
+
+bouton inconnu
  
-(Filename:  Line: 208)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-UnloadTime: 0.576231 ms
-
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 257.
-Total: 3.023017 ms (FindLiveObjects: 0.041054 ms CreateObjectMapping: 0.048752 ms MarkObjects: 0.388919 ms  DeleteObjects: 2.542824 ms)
-
-TerrainData is missing splat texture 2.
+bouton inconnu
  
-(Filename:  Line: 208)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+bouton inconnu
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Trigger enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1713)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.666013 ms
+TerrainData is missing splat texture 2.
+ 
+(Filename:  Line: 208)
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 380.
-Total: 1.601865 ms (FindLiveObjects: 0.065980 ms CreateObjectMapping: 0.049485 ms MarkObjects: 0.677035 ms  DeleteObjects: 0.807897 ms)
+UnloadTime: 0.941325 ms
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 415.
+Total: 1.098212 ms (FindLiveObjects: 0.035189 ms CreateObjectMapping: 0.015762 ms MarkObjects: 0.288482 ms  DeleteObjects: 0.758045 ms)
+
+TerrainData is missing splat texture 2.
+ 
+(Filename:  Line: 208)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.873511 ms
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 348.
+Total: 0.879376 ms (FindLiveObjects: 0.020160 ms CreateObjectMapping: 0.014295 ms MarkObjects: 0.173016 ms  DeleteObjects: 0.671903 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+TerrainData is missing splat texture 2.
+ 
+(Filename:  Line: 208)
+
+UnloadTime: 0.568900 ms
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 261.
+Total: 1.141466 ms (FindLiveObjects: 0.022360 ms CreateObjectMapping: 0.014662 ms MarkObjects: 0.190611 ms  DeleteObjects: 0.913466 ms)
+
+TerrainData is missing splat texture 2.
+ 
+(Filename:  Line: 208)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.559370 ms
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 261.
+Total: 0.940592 ms (FindLiveObjects: 0.021260 ms CreateObjectMapping: 0.014295 ms MarkObjects: 0.193910 ms  DeleteObjects: 0.710759 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.506218 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 415.
+Total: 0.608855 ms (FindLiveObjects: 0.031157 ms CreateObjectMapping: 0.015028 ms MarkObjects: 0.284450 ms  DeleteObjects: 0.277485 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.846019 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 534.
+Total: 1.321080 ms (FindLiveObjects: 0.038488 ms CreateObjectMapping: 0.016128 ms MarkObjects: 0.328437 ms  DeleteObjects: 0.937293 ms)
+
+bouton inconnu
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+bouton inconnu
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+bouton inconnu
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Trigger enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 

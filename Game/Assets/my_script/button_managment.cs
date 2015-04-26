@@ -17,27 +17,9 @@ public class button_managment : MonoBehaviour
                 this.transform.position = new Vector3(7166, 6436, 0);
             }
         }
-        else if (this.name == "Button_unPause")
+        else if (this.name == "Button_unPause" || this.name == "Button_Menu" || this.name == "Button_New_Game" || this.name == "Button_Option" || this.name == "Button_Exit")
         {
-            if (Time.timeScale == 0)
-            {
-                this.transform.position = new Vector3(80, 720, 0);
-            }
-            else
-            {
-                this.transform.position = new Vector3(7166, 6436, 0);
-            }
-        }
-        else if (this.name == "Button_Menu")
-        {
-            if (Time.timeScale == 0)
-            {
-                this.transform.position = new Vector3(500, 670, 0);
-            }
-            else
-            {
-                this.transform.position = new Vector3(7166, 6436, 0);
-            }
+            move_out_screen();
         }
         else
         {
@@ -65,9 +47,25 @@ public class button_managment : MonoBehaviour
 
     public void creat_pause_menu()
     {
-        if (this.name == "Button_Menu")
+        if (this.name == "Button_unPause")
         {
             this.transform.position = new Vector3(500, 670, 0);
+        }
+        if (this.name == "Button_Menu")
+        {
+            this.transform.position = new Vector3(500, 585, 0);
+        }
+        if (this.name == "Button_New_Game")
+        {
+            this.transform.position = new Vector3(500, 500, 0);
+        }
+        if (this.name == "Button_Option")
+        {
+            this.transform.position = new Vector3(500, 415, 0);
+        }
+        if (this.name == "Button_Exit")
+        {
+            this.transform.position = new Vector3(500, 330, 0);
         }
     }
 

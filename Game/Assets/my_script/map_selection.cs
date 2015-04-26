@@ -68,21 +68,25 @@ public class map_selection : MonoBehaviour
 
     public void launch_map1()
     {
+        Time.timeScale = 1;
         Application.LoadLevel("map_1");
     }
 
     public void launch_map2()
     {
+        Time.timeScale = 1;
         Application.LoadLevel("map_2");
     }
 
     public void launch_map3()
     {
+        Time.timeScale = 1;
         Application.LoadLevel("map_3");
     }
 
     public void return_to_menu()
     {
+        Time.timeScale = 1;
         Application.LoadLevel("MainMenu");
     }
 }
