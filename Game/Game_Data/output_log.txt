@@ -18,7 +18,40 @@ Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Manage
 Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.037 seconds
+- Completed reload, in  0.035 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\System.dll (this message is harmless)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Shader 'Nature/Terrain/Specular': fallback shader 'Nature/Terrain/Diffuse' not found
+Shader 'Nature/Terrain/Standard': fallback shader 'Nature/Terrain/Diffuse' not found
+UnloadTime: 3.485247 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 347.
+Total: 0.480559 ms (FindLiveObjects: 0.031524 ms CreateObjectMapping: 0.016861 ms MarkObjects: 0.186212 ms  DeleteObjects: 0.244495 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.573299 ms
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 553.
+Total: 0.628282 ms (FindLiveObjects: 0.036289 ms CreateObjectMapping: 0.016861 ms MarkObjects: 0.309009 ms  DeleteObjects: 0.265389 ms)
+
+bouton inconnu
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+bouton inconnu
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+bouton inconnu
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Trigger enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+

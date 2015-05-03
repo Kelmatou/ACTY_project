@@ -3,22 +3,16 @@ using System.Collections;
 
 public class button_managment : MonoBehaviour 
 {
+    bool default_language;
 
     void Start()
     {
+        default_language = true;
         if(this.name == "Button_Pause")
         {
             this.transform.position = new Vector3(80, 720, 0);
-            /*if(Time.timeScale == 1)
-            {
-                
-            }
-            else
-            {
-                this.transform.position = new Vector3(7166, 6436, 0);
-            }*/
         }
-        else if (this.name == "Button_unPause" || this.name == "Button_Menu" || this.name == "Button_New_Game" || this.name == "Button_Option" || this.name == "Button_Exit")
+        else if (this.name == "Button_PauseFR" || this.name == "Button_unPause" || this.name == "Button_unPauseFR" || this.name == "Button_Menu" || this.name == "Button_New_Game" || this.name == "Button_New_GameFR" || this.name == "Button_Option" || this.name == "Button_Exit" || this.name == "Button_ExitFR" || this.name == "Button_English" || this.name == "Button_French")
         {
             move_out_screen();
         }
@@ -31,7 +25,7 @@ public class button_managment : MonoBehaviour
     public void move_out_screen()
     {
         this.transform.position = new Vector3(7166, 6436, 0);
-        if(this.name == "Button_Pause")
+        if(this.name == "Button_Pause" || this.name == "Button_PauseFR")
         {
             Time.timeScale = 0;
         }
@@ -40,7 +34,7 @@ public class button_managment : MonoBehaviour
     public void move_in_screen()
     {
         this.transform.position = new Vector3(80, 720, 0);
-        if (this.name == "Button_Pause")
+        if (this.name == "Button_Pause" || this.name == "Button_PauseFR")
         {
             Time.timeScale = 1;
         }
@@ -48,25 +42,33 @@ public class button_managment : MonoBehaviour
 
     public void creat_pause_menu()
     {
-        if (this.name == "Button_unPause")
+        if (this.name == "Button_unPause" || this.name == "Button_unPauseFR")
         {
             this.transform.position = new Vector3(500, 670, 0);
         }
-        if (this.name == "Button_Menu")
+        else if (this.name == "Button_Menu")
         {
             this.transform.position = new Vector3(500, 585, 0);
         }
-        if (this.name == "Button_New_Game")
+        else if (this.name == "Button_New_Game" || this.name == "Button_New_GameFR")
         {
             this.transform.position = new Vector3(500, 500, 0);
         }
-        if (this.name == "Button_Option")
+        else if (this.name == "Button_Option")
         {
             this.transform.position = new Vector3(500, 415, 0);
         }
-        if (this.name == "Button_Exit")
+        else if (this.name == "Button_Exit" || this.name == "Button_ExitFR")
         {
             this.transform.position = new Vector3(500, 330, 0);
+        }
+        else if(this.name == "Button_French")
+        {
+            this.transform.position = new Vector3(250, 415, 0);
+        }
+        else if(this.name == "Button_English")
+        {
+            this.transform.position = new Vector3(750, 415, 0);
         }
     }
 
@@ -108,5 +110,10 @@ public class button_managment : MonoBehaviour
                 Debug.Log("bouton inconnu");
                 break;
         }
+    }
+
+    public void change_language()
+    {
+        default_language = this.name == "Button_English";
     }
 }
