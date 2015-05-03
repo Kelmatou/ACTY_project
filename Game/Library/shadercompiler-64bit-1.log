@@ -1,3 +1,9 @@
 Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-3800
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-7288
 Cmd: getPlatforms
+Cmd: preprocess
+  error: 1 plat 15 at (0): texcoord2 missing from surface shader's vertex input struct (appdata), disabled dynamic GI and meta pass generation
+  insize=1651 outsize=2115 ok=1
+Cmd: preprocess
+  error: 1 plat 15 at (0): texcoord2 missing from surface shader's vertex input struct (appdata), disabled dynamic GI and meta pass generation
+  insize=1486 outsize=2059 ok=1
