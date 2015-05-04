@@ -38,3 +38,17 @@ C:\Users\Antoine\Documents\ACTY_project\Game\Temp\bin\Debug\Unity.CecilTools.dll
 C:\Users\Antoine\Documents\ACTY_project\Game\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
 C:\Users\Antoine\Documents\ACTY_project\Game\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Antoine\Documents\ACTY_project\Game\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\Temp\bin\Debug\UnityEditor.dll
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\Temp\bin\Debug\UnityEngine.dll
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\NGUYENI\Desktop\ACTY_project\Game\obj\Debug\Assembly-CSharp-firstpass.pdb
