@@ -1,4 +1,5 @@
 Base path: C:/Program Files/Unity/Editor/Data
+<<<<<<< HEAD
 Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-12640
 Cmd: getPlatforms
 Cmd: preprocess
@@ -31,3 +32,7 @@ Cmd: compileSnippet
   api=4 type=0 insize=408601 outsize=12665 kw=DIRECTIONAL GEOM_TYPE_BRANCH ok=1
 Cmd: compileSnippet
   api=4 type=1 insize=408601 outsize=1217 kw=DIRECTIONAL GEOM_TYPE_BRANCH ok=1
+=======
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-7844
+Cmd: getPlatforms
+>>>>>>> c0186b718e855235f5f1c5f74265fee86a0066bc
