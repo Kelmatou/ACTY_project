@@ -25,7 +25,11 @@ public class button_managment : MonoBehaviour
     public void move_out_screen()
     {
         this.transform.position = new Vector3(7166, 6436, 0);
-        if(this.name == "Button_Pause" || this.name == "Button_PauseFR")
+        if(this.name == "Button_Pause" && default_language)
+        {
+            Time.timeScale = 0;
+        }
+        if (this.name == "Button_PauseFR" && !default_language)
         {
             Time.timeScale = 0;
         }
