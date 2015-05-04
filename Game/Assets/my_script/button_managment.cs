@@ -16,9 +16,29 @@ public class button_managment : MonoBehaviour
         {
             move_out_screen();
         }
+        else if(this.name == "tooltip_Zinc" || this.name == "tooltip_Rock" || this.name == "tooltip_Uranium")
+        {
+            create_bar_mineral();
+        }
         else
         {
             creat_game_inteface();
+        }
+    }
+
+    public void create_bar_mineral()
+    {
+        switch(this.name)
+        {
+            case("tooltip_Zinc"):
+                this.transform.position = new Vector3(520, 724, 0);
+                break;
+            case ("tooltip_Rock"):
+                this.transform.position = new Vector3(720, 724, 0);
+                break;
+            case ("tooltip_Uranium"):
+                this.transform.position = new Vector3(920, 724, 0);
+                break;
         }
     }
 

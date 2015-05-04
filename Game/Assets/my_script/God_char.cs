@@ -348,32 +348,33 @@ public class God_char : MonoBehaviour
 
     void build_donjon(int x, int z)
     {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.AddComponent<BoxCollider>();
-        cube.AddComponent<collision>();
-        cube.name = "Donjon";
-        cube.transform.transform.localScale = new Vector3(5, 14, 5);
-        cube.transform.position = new Vector3(x, 7, z);
+        GameObject exemple = GameObject.Find("Only Tower");
+        GameObject Donjon = exemple;
+        Donjon = Instantiate(exemple);
+        Donjon.AddComponent<BoxCollider>();
+        Donjon.AddComponent<collision>();
+        Donjon.transform.position = new Vector3(x, 0, z);
     }
 
     void build_tour_de_garde(int x, int z)
     {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.AddComponent<BoxCollider>();
-        cube.AddComponent<collision>();
-        cube.name = "Tower";
-        cube.transform.transform.localScale = new Vector3(2, 12, 2);
-        cube.transform.position = new Vector3(x, 6, z);
+        GameObject exemple = GameObject.Find("tour medieval");
+        GameObject Tower = exemple;
+        Tower = Instantiate(exemple);
+        Tower.AddComponent<BoxCollider>();
+        Tower.AddComponent<collision>();
+        Tower.transform.position = new Vector3(x, 0, z);
     }
 
     void build_caserne(int x, int z)
     {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.AddComponent<BoxCollider>();
-        cube.AddComponent<collision>();
-        cube.name = "Casern";
-        cube.transform.transform.localScale = new Vector3(4, 10, 4);
-        cube.transform.position = new Vector3(x, 5, z);
+        GameObject exemple = GameObject.Find("med_house_final");
+        GameObject Casern = exemple;
+        Casern = Instantiate(exemple);
+        Casern.AddComponent<BoxCollider>();
+        Casern.AddComponent<collision>();
+        Casern.transform.position = new Vector3(x, 3, z);
+        Casern.transform.Rotate(new Vector3(270, 0, 90));
     }
 
     void build_rempart(int x, int z)
