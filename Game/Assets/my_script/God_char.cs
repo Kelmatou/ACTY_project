@@ -374,7 +374,6 @@ public class God_char : MonoBehaviour
         Casern.AddComponent<BoxCollider>();
         Casern.AddComponent<collision>();
         Casern.transform.position = new Vector3(x, 3, z);
-        Casern.transform.Rotate(new Vector3(270, 0, 90));
     }
 
     void build_rempart(int x, int z)

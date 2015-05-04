@@ -16,7 +16,7 @@ public class button_managment : MonoBehaviour
         {
             move_out_screen();
         }
-        else if(this.name == "tooltip_Zinc" || this.name == "tooltip_Rock" || this.name == "tooltip_Uranium")
+        else if(this.name == "Tooltip_Zinc" || this.name == "Tooltip_Rock" || this.name == "Tooltip_Uranium")
         {
             create_bar_mineral();
         }
@@ -30,14 +30,14 @@ public class button_managment : MonoBehaviour
     {
         switch(this.name)
         {
-            case("tooltip_Zinc"):
-                this.transform.position = new Vector3(520, 724, 0);
+            case("Tooltip_Zinc"):
+                this.transform.position = new Vector3(530, 724, 0);
                 break;
-            case ("tooltip_Rock"):
-                this.transform.position = new Vector3(720, 724, 0);
+            case ("Tooltip_Rock"):
+                this.transform.position = new Vector3(730, 724, 0);
                 break;
-            case ("tooltip_Uranium"):
-                this.transform.position = new Vector3(920, 724, 0);
+            case ("Tooltip_Uranium"):
+                this.transform.position = new Vector3(930, 724, 0);
                 break;
         }
     }

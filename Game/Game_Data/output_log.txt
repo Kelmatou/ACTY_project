@@ -2,33 +2,10 @@ Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce 840M (ID=0x1341)
+    Renderer: NVIDIA GeForce GTX 860M   (ID=0x1392)
     Vendor:   NVIDIA
     VRAM:     1972 MB
 Begin MonoManager ReloadAssembly
-<<<<<<< HEAD
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.119 seconds
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-<RI> Initialized touch support.
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\System.dll (this message is harmless)
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1713)
-
-=======
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
@@ -39,14 +16,13 @@ Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Manage
 Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.072 seconds
+- Completed reload, in  0.093 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\System.dll (this message is harmless)
->>>>>>> origin/master
 The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1713)
@@ -55,40 +31,106 @@ The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1713)
 
-<<<<<<< HEAD
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 9dc -> priority: 1 
-=======
->>>>>>> origin/master
 The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1713)
 
-<<<<<<< HEAD
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1713)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.953893 ms
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 201.
-Total: 0.204484 ms (FindLiveObjects: 0.024869 ms CreateObjectMapping: 0.019343 ms MarkObjects: 0.151981 ms  DeleteObjects: 0.007105 ms)
-=======
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 131c -> priority: 1 
-  Thread -> id: 84c -> priority: 1 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-Shader 'Nature/Terrain/Specular': fallback shader 'Nature/Terrain/Diffuse' not found
-UnloadTime: 86.115761 ms
-
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 333.
-Total: 1.351870 ms (FindLiveObjects: 0.081742 ms CreateObjectMapping: 0.049485 ms MarkObjects: 0.442437 ms  DeleteObjects: 0.777105 ms)
+  Thread -> id: a34 -> priority: 1 
+  Thread -> id: d08 -> priority: 1 
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.620218 ms
+UnloadTime: 4.037283 ms
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 600.
-Total: 0.700494 ms (FindLiveObjects: 0.038855 ms CreateObjectMapping: 0.023459 ms MarkObjects: 0.359961 ms  DeleteObjects: 0.276752 ms)
->>>>>>> origin/master
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 213.
+Total: 0.241929 ms (FindLiveObjects: 0.021260 ms CreateObjectMapping: 0.029691 ms MarkObjects: 0.181813 ms  DeleteObjects: 0.008797 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.840886 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 213.
+Total: 0.186578 ms (FindLiveObjects: 0.016128 ms CreateObjectMapping: 0.009163 ms MarkObjects: 0.149922 ms  DeleteObjects: 0.010996 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.449035 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 213.
+Total: 0.194642 ms (FindLiveObjects: 0.016495 ms CreateObjectMapping: 0.009897 ms MarkObjects: 0.159819 ms  DeleteObjects: 0.008064 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.437305 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 213.
+Total: 0.212604 ms (FindLiveObjects: 0.029691 ms CreateObjectMapping: 0.011729 ms MarkObjects: 0.160552 ms  DeleteObjects: 0.009897 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Shader 'Nature/Terrain/Specular': fallback shader 'Nature/Terrain/Diffuse' not found
+Shader 'Nature/Terrain/Standard': fallback shader 'Nature/Terrain/Diffuse' not found
+UnloadTime: 1.071086 ms
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 333.
+Total: 1.053124 ms (FindLiveObjects: 0.048385 ms CreateObjectMapping: 0.045819 ms MarkObjects: 0.350430 ms  DeleteObjects: 0.607755 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.383028 ms
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1283.
+Total: 1.709632 ms (FindLiveObjects: 0.124263 ms CreateObjectMapping: 0.070745 ms MarkObjects: 0.902835 ms  DeleteObjects: 0.611054 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.504306 ms
+
+Unloading 183 unused Assets to reduce memory usage. Loaded Objects now: 332.
+Total: 2.244442 ms (FindLiveObjects: 0.079909 ms CreateObjectMapping: 0.064514 ms MarkObjects: 0.454533 ms  DeleteObjects: 1.639986 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+TerrainData is missing splat texture 2.
+ 
+(Filename:  Line: 208)
+
+UnloadTime: 0.730552 ms
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 245.
+Total: 1.461838 ms (FindLiveObjects: 0.026758 ms CreateObjectMapping: 0.019061 ms MarkObjects: 0.224334 ms  DeleteObjects: 1.190584 ms)
+
+TerrainData is missing splat texture 2.
+ 
+(Filename:  Line: 208)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.167124 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1181.
+Total: 1.581336 ms (FindLiveObjects: 0.118398 ms CreateObjectMapping: 0.063048 ms MarkObjects: 0.814861 ms  DeleteObjects: 0.583562 ms)
 
