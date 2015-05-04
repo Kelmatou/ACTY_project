@@ -30,11 +30,26 @@ public class Bouttons : MonoBehaviour
         {
             Time.timeScale = 1;
         }
-        Application.LoadLevel("MainMenu");
+        Application.LoadLevel("MenuEN");
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void launch_menu_optionsFR()
+    {
+        Application.LoadLevel("OptionsFR");
+    }
+
+    public void launch_menu_optionsEN()
+    {
+        Application.LoadLevel("OptionsEN");
+    }
+
+    public void lunch_menuFR()
+    {
+        Application.LoadLevel("MenuFR");
     }
 }
