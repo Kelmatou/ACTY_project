@@ -29,7 +29,7 @@ public class change_map : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M))
         {
             Time.timeScale = 1;
-            Application.LoadLevel("MainMenu");
+            Application.LoadLevel("MenuEN");
         }
     }
 }

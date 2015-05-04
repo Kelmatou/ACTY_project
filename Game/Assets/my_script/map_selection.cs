@@ -87,6 +87,6 @@ public class map_selection : MonoBehaviour
     public void return_to_menu()
     {
         Time.timeScale = 1;
-        Application.LoadLevel("MainMenu");
+        Application.LoadLevel("MenuEN");
     }
 }
