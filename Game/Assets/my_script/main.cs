@@ -63,6 +63,7 @@ namespace Programme
 
         void zoom_camera()
         {
+            int movespeed = 20;
             if(Input.GetKeyDown(KeyCode.R))
             {
                 this.transform.position = new Vector3(-1532, 1465, -1632);
@@ -71,14 +72,14 @@ namespace Programme
             {
                 if(this.transform.position.x <= -512 && this.transform.position.y >= 445 && this .transform.position.z <= -612)
                 {
-                    this.transform.position = new Vector3(this.transform.position.x + 20, this.transform.position.y - 17, this.transform.position.z + 20);
+                    this.transform.position = new Vector3(this.transform.position.x + movespeed, this.transform.position.y - 17, this.transform.position.z + movespeed);
                 }
             }
             else if (Input.GetAxis("Mouse ScrollWheel") < 0) //ZOOM ARRIERE
             {
                 if (this.transform.position.x >= -2012 && this.transform.position.y <= 1945 && this.transform.position.z >= -2112)
                 {
-                    this.transform.position = new Vector3(this.transform.position.x - 20, this.transform.position.y + 17, this.transform.position.z - 20);
+                    this.transform.position = new Vector3(this.transform.position.x - movespeed, this.transform.position.y + 17, this.transform.position.z - movespeed);
                 }
             }
         }
