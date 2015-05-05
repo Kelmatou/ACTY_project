@@ -16,7 +16,8 @@ public class God_char : MonoBehaviour
         movespeed = 1f;
         auto_path_x = -1;
         auto_path_z = -1;
-        gameObject.transform.position = new Vector3(42, 1.5f, 42);
+        gameObject.transform.position = new Vector3(42, 5, 42);
+        this.transform.Rotate(new Vector3(0, 180, 0));
     }
 
     // Update is called once per frame
@@ -78,30 +79,34 @@ public class God_char : MonoBehaviour
 
     void move(float movespeed)
     {
+        string old_direction = direction;
         if(Input.GetKey(KeyCode.UpArrow))
         {
             direction = "N";
             if(Input.GetKey(KeyCode.LeftArrow))
             {
                 direction = "NW";
+                apply_rotation(old_direction);
                 if (gameObject.transform.position.z < 400 && gameObject.transform.position.x < 400)
                 {
-                    gameObject.transform.Translate(new Vector3(1 * movespeed, 0, 1 * movespeed)); //go up and left
+                    gameObject.transform.Translate(new Vector3(-1 * movespeed, 0, 0)); //move straight
                     reset_auto_path();
                 }
             }
             else if(Input.GetKey(KeyCode.RightArrow))
             {
                 direction = "NE";
+                apply_rotation(old_direction);
                 if (gameObject.transform.position.z > 2 && gameObject.transform.position.x < 400)
                 {
-                    gameObject.transform.Translate(new Vector3(1 * movespeed, 0, -1 * movespeed)); //go up and right
+                    gameObject.transform.Translate(new Vector3(-1 * movespeed, 0, 0)); //move straight
                     reset_auto_path();
                 }
             }
             else if (gameObject.transform.position.x < 400)
             {
-                gameObject.transform.Translate(new Vector3(1 * movespeed, 0, 0)); //go up
+                apply_rotation(old_direction);
+                gameObject.transform.Translate(new Vector3(-1 * movespeed, 0, 0)); //move straight
                 reset_auto_path();
             }
         }
@@ -111,42 +116,47 @@ public class God_char : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 direction = "SW";
+                apply_rotation(old_direction);
                 if (gameObject.transform.position.z < 400 && gameObject.transform.position.x > 2)
                 {
-                    gameObject.transform.Translate(new Vector3(-1 * movespeed, 0, 1 * movespeed)); //go down and left
+                    gameObject.transform.Translate(new Vector3(-1 * movespeed, 0, 0)); //move straight
                     reset_auto_path();
                 }
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
                 direction = "SE";
+                apply_rotation(old_direction);
                 if (gameObject.transform.position.z > 2 && gameObject.transform.position.x > 2)
                 {
-                    gameObject.transform.Translate(new Vector3(-1 * movespeed, 0, -1 * movespeed)); //go down and right
+                    gameObject.transform.Translate(new Vector3(-1 * movespeed, 0, 0)); //move straight
                     reset_auto_path();
                 }
             }
             else if(gameObject.transform.position.x > 2)
             {
-                gameObject.transform.Translate(new Vector3(-1 * movespeed, 0, 0)); //go down
+                apply_rotation(old_direction);
+                gameObject.transform.Translate(new Vector3(-1 * movespeed, 0, 0)); //move straight
                 reset_auto_path();
             }
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             direction = "W";
+            apply_rotation(old_direction);
             if (gameObject.transform.position.z < 400)
             {
-                gameObject.transform.Translate(new Vector3(0, 0, 1 * movespeed)); //go left
+                gameObject.transform.Translate(new Vector3(-1 * movespeed, 0, 0)); //move straight
                 reset_auto_path();
             }
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             direction = "E";
+            apply_rotation(old_direction);
             if (gameObject.transform.position.z > 2)
             {
-                gameObject.transform.Translate(new Vector3(0, 0, -1 * movespeed)); //go right
+                gameObject.transform.Translate(new Vector3(-1 * movespeed, 0, 0)); //move straight
                 reset_auto_path();
             }
         }
@@ -173,6 +183,221 @@ public class God_char : MonoBehaviour
             {
                 auto_path_z = 0;
             }
+        }
+    }
+
+    void apply_rotation(string old_direction)
+    {
+        switch(old_direction)
+        {
+            case ("N"):
+                switch(direction)
+                {
+                    case ("NE"):
+                        this.transform.Rotate(new Vector3(0, 45, 0));
+                        break;
+                    case ("NW"):
+                        this.transform.Rotate(new Vector3(0, 315, 0));
+                        break;
+                    case ("S"):
+                        this.transform.Rotate(new Vector3(0, 180, 0));
+                        break;
+                    case ("SE"):
+                        this.transform.Rotate(new Vector3(0, 135, 0));
+                        break;
+                    case ("SW"):
+                        this.transform.Rotate(new Vector3(0, 225, 0));
+                        break;
+                    case ("E"):
+                        this.transform.Rotate(new Vector3(0, 90, 0));
+                        break;
+                    case ("W"):
+                        this.transform.Rotate(new Vector3(0, 270, 0));
+                        break;
+                }
+                break;
+            case ("NE"):
+                switch(direction)
+                {
+                    case ("N"):
+                        this.transform.Rotate(new Vector3(0, 315, 0));
+                        break;
+                    case ("NW"):
+                        this.transform.Rotate(new Vector3(0, 270, 0));
+                        break;
+                    case ("S"):
+                        this.transform.Rotate(new Vector3(0, 135, 0));
+                        break;
+                    case ("SE"):
+                        this.transform.Rotate(new Vector3(0, 90, 0));
+                        break;
+                    case ("SW"):
+                        this.transform.Rotate(new Vector3(0, 180, 0));
+                        break;
+                    case ("E"):
+                        this.transform.Rotate(new Vector3(0, 45, 0));
+                        break;
+                    case ("W"):
+                        this.transform.Rotate(new Vector3(0, 225, 0));
+                        break;
+                }
+                break;
+            case ("NW"):
+                switch(direction)
+                {
+                    case ("N"):
+                        this.transform.Rotate(new Vector3(0, 45, 0));
+                        break;
+                    case ("NE"):
+                        this.transform.Rotate(new Vector3(0, 90, 0));
+                        break;
+                    case ("S"):
+                        this.transform.Rotate(new Vector3(0, 225, 0));
+                        break;
+                    case ("SE"):
+                        this.transform.Rotate(new Vector3(0, 180, 0));
+                        break;
+                    case ("SW"):
+                        this.transform.Rotate(new Vector3(0, 270, 0));
+                        break;
+                    case ("E"):
+                        this.transform.Rotate(new Vector3(0, 135, 0));
+                        break;
+                    case ("W"):
+                        this.transform.Rotate(new Vector3(0, 315, 0));
+                        break;
+                }
+                break;
+            case ("S"):
+                switch(direction)
+                {
+                    case ("N"):
+                        this.transform.Rotate(new Vector3(0, 180, 0));
+                        break;
+                    case ("NE"):
+                        this.transform.Rotate(new Vector3(0, 225, 0));
+                        break;
+                    case ("NW"):
+                        this.transform.Rotate(new Vector3(0, 135, 0));
+                        break;
+                    case ("SE"):
+                        this.transform.Rotate(new Vector3(0, 315, 0));
+                        break;
+                    case ("SW"):
+                        this.transform.Rotate(new Vector3(0, 45, 0));
+                        break;
+                    case ("E"):
+                        this.transform.Rotate(new Vector3(0, 270, 0));
+                        break;
+                    case ("W"):
+                        this.transform.Rotate(new Vector3(0, 90, 0));
+                        break;
+                }
+                break;
+            case ("SE"):
+                switch(direction)
+                {
+                    case ("N"):
+                        this.transform.Rotate(new Vector3(0, 225, 0));
+                        break;
+                    case ("NE"):
+                        this.transform.Rotate(new Vector3(0, 270, 0));
+                        break;
+                    case ("NW"):
+                        this.transform.Rotate(new Vector3(0, 180, 0));
+                        break;
+                    case ("S"):
+                        this.transform.Rotate(new Vector3(0, 45, 0));
+                        break;
+                    case ("SW"):
+                        this.transform.Rotate(new Vector3(0, 90, 0));
+                        break;
+                    case ("E"):
+                        this.transform.Rotate(new Vector3(0, 315, 0));
+                        break;
+                    case ("W"):
+                        this.transform.Rotate(new Vector3(0, 135, 0));
+                        break;
+                }
+                break;
+            case ("SW"):
+                switch(direction)
+                {
+                    case ("N"):
+                        this.transform.Rotate(new Vector3(0, 135, 0));
+                        break;
+                    case ("NE"):
+                        this.transform.Rotate(new Vector3(0, 180, 0));
+                        break;
+                    case ("NW"):
+                        this.transform.Rotate(new Vector3(0, 90, 0));
+                        break;
+                    case ("S"):
+                        this.transform.Rotate(new Vector3(0, 315, 0));
+                        break;
+                    case ("SE"):
+                        this.transform.Rotate(new Vector3(0, 270, 0));
+                        break;
+                    case ("E"):
+                        this.transform.Rotate(new Vector3(0, 225, 0));
+                        break;
+                    case ("W"):
+                        this.transform.Rotate(new Vector3(0, 45, 0));
+                        break;
+                }
+                break;
+            case ("E"):
+                switch(direction)
+                {
+                    case ("N"):
+                        this.transform.Rotate(new Vector3(0, 270, 0));
+                        break;
+                    case ("NE"):
+                        this.transform.Rotate(new Vector3(0, 315, 0));
+                        break;
+                    case ("NW"):
+                        this.transform.Rotate(new Vector3(0, 225, 0));
+                        break;
+                    case ("S"):
+                        this.transform.Rotate(new Vector3(0, 90, 0));
+                        break;
+                    case ("SE"):
+                        this.transform.Rotate(new Vector3(0, 45, 0));
+                        break;
+                    case ("SW"):
+                        this.transform.Rotate(new Vector3(0, 135, 0));
+                        break;
+                    case ("W"):
+                        this.transform.Rotate(new Vector3(0, 180, 0));
+                        break;
+                }
+                break;
+            case ("W"):
+                switch(direction)
+                {
+                    case ("N"):
+                        this.transform.Rotate(new Vector3(0, 90, 0));
+                        break;
+                    case ("NE"):
+                        this.transform.Rotate(new Vector3(0, 135, 0));
+                        break;
+                    case ("NW"):
+                        this.transform.Rotate(new Vector3(0, 45, 0));
+                        break;
+                    case ("S"):
+                        this.transform.Rotate(new Vector3(0, 270, 0));
+                        break;
+                    case ("SE"):
+                        this.transform.Rotate(new Vector3(0, 225, 0));
+                        break;
+                    case ("SW"):
+                        this.transform.Rotate(new Vector3(0, 315, 0));
+                        break;
+                    case ("E"):
+                        this.transform.Rotate(new Vector3(0, 180, 0));
+                        break;
+                }
+                break;
         }
     }
 
@@ -368,12 +593,12 @@ public class God_char : MonoBehaviour
 
     void build_caserne(int x, int z)
     {
-        GameObject exemple = GameObject.Find("med_house_final");
+        GameObject exemple = GameObject.Find("barracks");
         GameObject Casern = exemple;
         Casern = Instantiate(exemple);
         Casern.AddComponent<BoxCollider>();
         Casern.AddComponent<collision>();
-        Casern.transform.position = new Vector3(x, 3, z);
+        Casern.transform.position = new Vector3(x, 0, z);
     }
 
     void build_rempart(int x, int z)
@@ -384,26 +609,26 @@ public class God_char : MonoBehaviour
         cube.name = "Wall";
         cube.transform.transform.localScale = new Vector3(1, 12, 1);
         cube.transform.position = new Vector3(x, 6, z);
-    }
+    } //ATTENTE DU MODELE
 
     void build_temple(int x, int z)
     {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.AddComponent<BoxCollider>();
-        cube.AddComponent<collision>();
-        cube.name = "Temple";
-        cube.transform.transform.localScale = new Vector3(4, 12, 5);
-        cube.transform.position = new Vector3(x, 6, z);
+        GameObject exemple = GameObject.Find("med_house_final");
+        GameObject Casern = exemple;
+        Casern = Instantiate(exemple);
+        Casern.AddComponent<BoxCollider>();
+        Casern.AddComponent<collision>();
+        Casern.transform.position = new Vector3(x, 3, z);
     }
 
     void build_laboratoire(int x, int z)
     {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.AddComponent<BoxCollider>();
-        cube.AddComponent<collision>();
-        cube.name = "Lab";
-        cube.transform.transform.localScale = new Vector3(3, 10, 4);
-        cube.transform.position = new Vector3(x, 5, z);
+        GameObject exemple = GameObject.Find("weaponsmith");
+        GameObject Casern = exemple;
+        Casern = Instantiate(exemple);
+        Casern.AddComponent<BoxCollider>();
+        Casern.AddComponent<collision>();
+        Casern.transform.position = new Vector3(x, 0, z);
     }
 
     void build_banque(int x, int z)
@@ -414,7 +639,7 @@ public class God_char : MonoBehaviour
         cube.name = "Bank";
         cube.transform.transform.localScale = new Vector3(3, 10, 3);
         cube.transform.position = new Vector3(x, 5, z);
-    }
+    } //ATTENTE DU MODELE
 
     void build_mine_zinc(int x, int z)
     {
@@ -424,7 +649,7 @@ public class God_char : MonoBehaviour
         cube.name = "Mine";
         cube.transform.transform.localScale = new Vector3(2, 6, 2);
         cube.transform.position = new Vector3(x, 3, z);
-    }
+    } //ATTENTE DU MODELE
 
     void build_carriere_roche_volcanique(int x, int z)
     {
@@ -434,7 +659,7 @@ public class God_char : MonoBehaviour
         cube.name = "Carrier";
         cube.transform.transform.localScale = new Vector3(2, 6, 2);
         cube.transform.position = new Vector3(x, 3, z);
-    }
+    } //ATTENTE DU MODELE
 
     void build_centre_extraction_uranium(int x, int z)
     {
@@ -444,5 +669,5 @@ public class God_char : MonoBehaviour
         cube.name = "Center";
         cube.transform.transform.localScale = new Vector3(2, 8, 2);
         cube.transform.position = new Vector3(x, 4, z);
-    }
+    } //ATTENTE DU MODELE
 }
