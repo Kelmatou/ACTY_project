@@ -586,8 +586,6 @@ public class God_char : MonoBehaviour
         GameObject exemple = GameObject.Find("tour medieval");
         GameObject Tower = exemple;
         Tower = Instantiate(exemple);
-        Tower.AddComponent<BoxCollider>();
-        Tower.AddComponent<collision>();
         Tower.transform.position = new Vector3(x, 0, z);
     }
 

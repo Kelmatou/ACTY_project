@@ -9,13 +9,33 @@ public class map_selection : MonoBehaviour
         {
             Application.Quit();
         }
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+        else if(Input.GetKeyDown(KeyCode.RightArrow))
         {
             launch_next_map_selection();
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             launch_previous_map_selection();
+        }
+        else if(Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            launch_current_map();
+        }
+    }
+
+    void launch_current_map()
+    {
+        switch(this.name)
+        {
+            case("Map1_selection"):
+                launch_map1();
+                break;
+            case ("Map2_selection"):
+                launch_map2();
+                break;
+            case ("Map3_selection"):
+                launch_map3();
+                break;
         }
     }
 
