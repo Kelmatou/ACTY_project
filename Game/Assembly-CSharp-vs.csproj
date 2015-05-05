@@ -68,7 +68,11 @@
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Antoine/Documents/ACTY_project/Game/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+<<<<<<< HEAD
+ <HintPath>C:/Users/Cyril Lemaître/Documents/GitHub/ACTY_project/Game/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+=======
+ <HintPath>C:/Users/NGUYENI/Desktop/ACTY_project/Game/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+>>>>>>> 61d0cf2e773ab5a9f4dd7c614df70f57e5ca64ac
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
