@@ -2,6 +2,7 @@ Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
+<<<<<<< HEAD
     Renderer: NVIDIA GeForce 840M (ID=0x1341)
     Vendor:   NVIDIA
     VRAM:     1972 MB
@@ -23,6 +24,29 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\System.dll (this message is harmless)
+=======
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\NGUYENI\Desktop\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\NGUYENI\Desktop\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\NGUYENI\Desktop\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\NGUYENI\Desktop\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\NGUYENI\Desktop\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\NGUYENI\Desktop\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\NGUYENI\Desktop\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\NGUYENI\Desktop\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\NGUYENI\Desktop\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\NGUYENI\Desktop\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.347 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\NGUYENI\Desktop\ACTY_project\Game\Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\NGUYENI\Desktop\ACTY_project\Game\Game_Data\Managed\System.dll (this message is harmless)
+>>>>>>> 61d0cf2e773ab5a9f4dd7c614df70f57e5ca64ac
 The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1713)
@@ -36,6 +60,7 @@ The referenced script on this Behaviour is missing!
 (Filename:  Line: 1713)
 
 Setting up 1 worker threads for Enlighten.
+<<<<<<< HEAD
   Thread -> id: 19b4 -> priority: 1 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
 Shader 'Nature/Terrain/Specular': fallback shader 'Nature/Terrain/Diffuse' not found
@@ -154,4 +179,59 @@ UnloadTime: 0.808463 ms
 
 Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 215.
 Total: 1.023212 ms (FindLiveObjects: 0.016579 ms CreateObjectMapping: 0.009868 ms MarkObjects: 0.174877 ms  DeleteObjects: 0.821096 ms)
+=======
+  Thread -> id: 5d70 -> priority: 1 
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.772177 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 213.
+Total: 0.259600 ms (FindLiveObjects: 0.041656 ms CreateObjectMapping: 0.030186 ms MarkObjects: 0.178701 ms  DeleteObjects: 0.007848 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.138014 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 213.
+Total: 0.276504 ms (FindLiveObjects: 0.036826 ms CreateObjectMapping: 0.036826 ms MarkObjects: 0.189568 ms  DeleteObjects: 0.012074 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Shader 'Nature/Terrain/Specular': dependency 'BaseMapShader' shader 'Hidden/TerrainEngine/Splatmap/Specular-Base' not found
+UnloadTime: 0.534293 ms
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 333.
+Total: 0.568101 ms (FindLiveObjects: 0.053127 ms CreateObjectMapping: 0.038034 ms MarkObjects: 0.170853 ms  DeleteObjects: 0.305482 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.841587 ms
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 244.
+Total: 1.375880 ms (FindLiveObjects: 0.042864 ms CreateObjectMapping: 0.046486 ms MarkObjects: 0.176890 ms  DeleteObjects: 1.109035 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.755255 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 331.
+Total: 1.205631 ms (FindLiveObjects: 0.056749 ms CreateObjectMapping: 0.030789 ms MarkObjects: 0.198020 ms  DeleteObjects: 0.918863 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.964142 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1281.
+Total: 1.040815 ms (FindLiveObjects: 0.153345 ms CreateObjectMapping: 0.077276 ms MarkObjects: 0.516785 ms  DeleteObjects: 0.292201 ms)
+>>>>>>> 61d0cf2e773ab5a9f4dd7c614df70f57e5ca64ac
 
