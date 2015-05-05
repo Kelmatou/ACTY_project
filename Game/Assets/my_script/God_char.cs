@@ -153,8 +153,8 @@ public class God_char : MonoBehaviour
 
         if(Input.GetMouseButtonDown(1))
         {
-            auto_path_x = System.Math.Round(Input.mousePosition.x, 0);
-            auto_path_z = System.Math.Round(Input.mousePosition.y, 0);
+            auto_path_x = System.Math.Round(Input.mousePosition.x / (1024f / 400f), 0);
+            auto_path_z = System.Math.Round(Input.mousePosition.y / (768f / 400f), 0);
             Debug.Log("pos x: " + auto_path_x + " - pos y: " + auto_path_z);
 
             if(auto_path_x > 400)
