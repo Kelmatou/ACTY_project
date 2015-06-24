@@ -70,7 +70,8 @@ namespace Programme
             }
             else if(Input.GetAxis("Mouse ScrollWheel") > 0) //ZOOM AVANT
             {
-                if(this.transform.position.x <= -512 && this.transform.position.y >= 445 && this .transform.position.z <= -612)
+                //if(this.transform.position.x <= -512 && this.transform.position.y >= 445 && this .transform.position.z <= -612)
+                if (this.transform.position.x <= -50 && this.transform.position.y >= 50 && this.transform.position.z <= -200)
                 {
                     this.transform.position = new Vector3(this.transform.position.x + movespeed, this.transform.position.y - 17, this.transform.position.z + movespeed);
                 }
