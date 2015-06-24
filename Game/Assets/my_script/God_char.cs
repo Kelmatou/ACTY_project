@@ -12,10 +12,18 @@ public class God_char : MonoBehaviour
     void Start()
     {
         direction = "N";
+<<<<<<< HEAD
         gameObject.name = "Player";
         movespeed = 1f;
         auto_path_x = -1;
         auto_path_z = -1;
+=======
+        gameObject.name = "Kelmatou";
+        movespeed = 1f;
+        auto_path_x = -1;
+        auto_path_z = -1;
+        gameObject.transform.position = new Vector3(42, 5, 42);
+>>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
         this.transform.Rotate(new Vector3(0, 180, 0));
     }
 
@@ -576,6 +584,10 @@ public class God_char : MonoBehaviour
         GameObject Donjon = exemple;
         Donjon = Instantiate(exemple);
         Donjon.AddComponent<BoxCollider>();
+<<<<<<< HEAD
+=======
+        Donjon.AddComponent<collision>();
+>>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
         Donjon.transform.position = new Vector3(x, 0, z);
     }
 
@@ -593,6 +605,10 @@ public class God_char : MonoBehaviour
         GameObject Casern = exemple;
         Casern = Instantiate(exemple);
         Casern.AddComponent<BoxCollider>();
+<<<<<<< HEAD
+=======
+        Casern.AddComponent<collision>();
+>>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
         Casern.transform.position = new Vector3(x, 0, z);
     }
 
@@ -600,6 +616,10 @@ public class God_char : MonoBehaviour
     {
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         cube.AddComponent<BoxCollider>();
+<<<<<<< HEAD
+=======
+        cube.AddComponent<collision>();
+>>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
         cube.name = "Wall";
         cube.transform.transform.localScale = new Vector3(1, 12, 1);
         cube.transform.position = new Vector3(x, 6, z);
@@ -611,6 +631,10 @@ public class God_char : MonoBehaviour
         GameObject Casern = exemple;
         Casern = Instantiate(exemple);
         Casern.AddComponent<BoxCollider>();
+<<<<<<< HEAD
+=======
+        Casern.AddComponent<collision>();
+>>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
         Casern.transform.position = new Vector3(x, 3, z);
     }
 
@@ -620,6 +644,10 @@ public class God_char : MonoBehaviour
         GameObject Casern = exemple;
         Casern = Instantiate(exemple);
         Casern.AddComponent<BoxCollider>();
+<<<<<<< HEAD
+=======
+        Casern.AddComponent<collision>();
+>>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
         Casern.transform.position = new Vector3(x, 0, z);
     }
 
@@ -627,6 +655,10 @@ public class God_char : MonoBehaviour
     {
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         cube.AddComponent<BoxCollider>();
+<<<<<<< HEAD
+=======
+        cube.AddComponent<collision>();
+>>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
         cube.name = "Bank";
         cube.transform.transform.localScale = new Vector3(3, 10, 3);
         cube.transform.position = new Vector3(x, 5, z);
@@ -636,6 +668,10 @@ public class God_char : MonoBehaviour
     {
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         cube.AddComponent<BoxCollider>();
+<<<<<<< HEAD
+=======
+        cube.AddComponent<collision>();
+>>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
         cube.name = "Mine";
         cube.transform.transform.localScale = new Vector3(2, 6, 2);
         cube.transform.position = new Vector3(x, 3, z);
@@ -645,6 +681,10 @@ public class God_char : MonoBehaviour
     {
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         cube.AddComponent<BoxCollider>();
+<<<<<<< HEAD
+=======
+        cube.AddComponent<collision>();
+>>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
         cube.name = "Carrier";
         cube.transform.transform.localScale = new Vector3(2, 6, 2);
         cube.transform.position = new Vector3(x, 3, z);
@@ -654,6 +694,10 @@ public class God_char : MonoBehaviour
     {
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         cube.AddComponent<BoxCollider>();
+<<<<<<< HEAD
+=======
+        cube.AddComponent<collision>();
+>>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
         cube.name = "Center";
         cube.transform.transform.localScale = new Vector3(2, 8, 2);
         cube.transform.position = new Vector3(x, 4, z);

@@ -4,7 +4,11 @@ Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
     Renderer: NVIDIA GeForce GTX 860M   (ID=0x1392)
     Vendor:   NVIDIA
+<<<<<<< HEAD
     VRAM:     1991 MB
+=======
+    VRAM:     1972 MB
+>>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -16,6 +20,7 @@ Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Manage
 Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+<<<<<<< HEAD
 - Completed reload, in  0.081 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
@@ -23004,3 +23009,9 @@ NW
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
+=======
+- Completed reload, in  0.094 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+>>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
