@@ -9,7 +9,6 @@ public class IA : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
-<<<<<<< HEAD
         if(this.name != "Player(Clone)" && this.name != "FERDINAN_player" && this.name != "Player")
         {
             gameObject.name = "Ennemy";
@@ -21,12 +20,6 @@ public class IA : MonoBehaviour
         {
             movespeed = 1f;
         }
-=======
-        direction = "N";
-        gameObject.name = "Dark Vador";
-        movespeed = 0.5f;
-        gameObject.transform.position = new Vector3(358, 5, 358);
->>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
 	}
 	
 	// Update is called once per frame
@@ -34,7 +27,6 @@ public class IA : MonoBehaviour
     {
         if (Time.timeScale != 0)
         {
-<<<<<<< HEAD
             if(this.name == "Ennemy")
             {
                 hunt(GameObject.Find("Player"), movespeed);
@@ -43,9 +35,6 @@ public class IA : MonoBehaviour
             {
                 hunt(GameObject.Find("Ennemy"), movespeed);
             }
-=======
-            hunt(GameObject.Find("Kelmatou"), movespeed);
->>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
         }
 	}
 
@@ -268,7 +257,6 @@ public class IA : MonoBehaviour
     {
         string old_direction = direction;
 
-<<<<<<< HEAD
         if(target != null)
         {
             if (target.transform.position.x - 2 > this.transform.position.x + 1 * movespeed && target.transform.position.z - 2 > this.transform.position.z + 1 * movespeed)
@@ -320,56 +308,5 @@ public class IA : MonoBehaviour
                 this.transform.Translate(new Vector3(-1 * movespeed, 0, 0));
             }
         }
-=======
-        if (target.transform.position.x - 2 > this.transform.position.x + 1 * movespeed && target.transform.position.z - 2 > this.transform.position.z + 1 * movespeed)
-        {
-            direction = "SE";
-            apply_rotation(old_direction);
-            this.transform.Translate(new Vector3(-1 * movespeed, 0, 0));
-        }
-        else if (target.transform.position.x - 2 > this.transform.position.x + 1 * movespeed && target.transform.position.z + 2 < this.transform.position.z - 1 * movespeed)
-        {
-            direction = "SW";
-            apply_rotation(old_direction);
-            this.transform.Translate(new Vector3(-1 * movespeed, 0, 0));
-        }
-        else if (target.transform.position.x + 2 < this.transform.position.x - 1 * movespeed && target.transform.position.z - 2 > this.transform.position.z + 1 * movespeed)
-        {
-            direction = "NE";
-            apply_rotation(old_direction);
-            this.transform.Translate(new Vector3(-1 * movespeed, 0, 0));
-        }
-        else if (target.transform.position.x + 2 < this.transform.position.x - 1 * movespeed && target.transform.position.z + 2 < this.transform.position.z - 1 * movespeed)
-        {
-            direction = "NW";
-            apply_rotation(old_direction);
-            this.transform.Translate(new Vector3(-1 * movespeed, 0, 0));
-        }
-        else if (target.transform.position.x - 2 > this.transform.position.x + 1 * movespeed)
-        {
-            direction = "S";
-            apply_rotation(old_direction);
-            this.transform.Translate(new Vector3(-1 * movespeed, 0, 0));
-        }
-        else if (target.transform.position.x  + 2 < this.transform.position.x - 1 * movespeed)
-        {
-            direction = "N";
-            apply_rotation(old_direction);
-            this.transform.Translate(new Vector3(-1 * movespeed, 0, 0));
-        }
-        else if (target.transform.position.z - 2> this.transform.position.z + 1 * movespeed)
-        {
-            direction = "E";
-            apply_rotation(old_direction);
-            this.transform.Translate(new Vector3(-1 * movespeed, 0, 0));
-        }
-        else if (target.transform.position.z + 2< this.transform.position.z - 1 * movespeed)
-        {
-            direction = "W";
-            apply_rotation(old_direction);
-            this.transform.Translate(new Vector3(-1 * movespeed, 0, 0));
-        }
-        Debug.Log(direction);
->>>>>>> f946c0f40335e321420f8e46944aa0357dcfd393
     }
 }
