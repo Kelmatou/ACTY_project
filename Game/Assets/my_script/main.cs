@@ -70,7 +70,6 @@ namespace Programme
             }
             else if(Input.GetAxis("Mouse ScrollWheel") > 0) //ZOOM AVANT
             {
-                //if(this.transform.position.x <= -512 && this.transform.position.y >= 445 && this .transform.position.z <= -612)
                 if (this.transform.position.x <= -50 && this.transform.position.y >= 50 && this.transform.position.z <= -200)
                 {
                     this.transform.position = new Vector3(this.transform.position.x + movespeed, this.transform.position.y - 17, this.transform.position.z + movespeed);
@@ -95,6 +94,7 @@ namespace Programme
             GameObject button_New_Game = GameObject.Find("Button_New_Game");
             GameObject button_New_GameFR = GameObject.Find("Button_New_GameFR");
             GameObject button_Option = GameObject.Find("Button_Option");
+            GameObject button_OptionFR = GameObject.Find("Button_OptionFR");
             GameObject button_Exit = GameObject.Find("Button_Exit");
             GameObject button_ExitFR = GameObject.Find("Button_ExitFR");
             Time.timeScale = 0;
@@ -104,6 +104,7 @@ namespace Programme
                 button_New_Game.transform.position = new Vector3(500, 500, 0);
                 button_Exit.transform.position = new Vector3(500, 330, 0);
                 button_pause.transform.position = new Vector3(7166, 6436, 0);
+                button_Option.transform.position = new Vector3(500, 415, 0);
             }
             else //LE JEU EST EN FR
             {
@@ -111,11 +112,10 @@ namespace Programme
                 button_New_GameFR.transform.position = new Vector3(500, 500, 0);
                 button_ExitFR.transform.position = new Vector3(500, 330, 0);
                 button_pauseFR.transform.position = new Vector3(7166, 6436, 0);
+                button_OptionFR.transform.position = new Vector3(500, 415, 0);
             }
             
-            button_Menu.transform.position = new Vector3(500, 585, 0);
-            button_Option.transform.position = new Vector3(500, 415, 0);
-            
+            button_Menu.transform.position = new Vector3(500, 585, 0); 
         }
 
         void unpause()
@@ -128,6 +128,13 @@ namespace Programme
             GameObject button_New_Game = GameObject.Find("Button_New_Game");
             GameObject button_New_GameFR = GameObject.Find("Button_New_GameFR");
             GameObject button_Option = GameObject.Find("Button_Option");
+            GameObject button_OptionFR = GameObject.Find("Button_OptionFR");
+            GameObject button_English = GameObject.Find("Button_English");
+            GameObject button_French = GameObject.Find("Button_French");
+            GameObject button_son = GameObject.Find("Button_son");
+            GameObject button_couper = GameObject.Find("Button_couper");
+            GameObject button_sound = GameObject.Find("Button_sound");
+            GameObject button_mute = GameObject.Find("Button_mute");
             GameObject button_Exit = GameObject.Find("Button_Exit");
             GameObject button_ExitFR = GameObject.Find("Button_ExitFR");
             Time.timeScale = 1;
@@ -137,6 +144,9 @@ namespace Programme
                 button_unpause.transform.position = new Vector3(7166, 6436, 0);
                 button_New_Game.transform.position = new Vector3(7166, 6436, 0);
                 button_Exit.transform.position = new Vector3(7166, 6436, 0);
+                button_Option.transform.position = new Vector3(7166, 6436, 0);
+                button_sound.transform.position = new Vector3(7166, 6436, 0);
+                button_mute.transform.position = new Vector3(7166, 6436, 0);
             }
             else //LE JEU EST EN FR
             {
@@ -144,9 +154,13 @@ namespace Programme
                 button_unpauseFR.transform.position = new Vector3(7166, 6436, 0);
                 button_New_GameFR.transform.position = new Vector3(7166, 6436, 0);
                 button_ExitFR.transform.position = new Vector3(7166, 6436, 0);
+                button_OptionFR.transform.position = new Vector3(7166, 6436, 0);
+                button_son.transform.position = new Vector3(7166, 6436, 0);
+                button_couper.transform.position = new Vector3(7166, 6436, 0);
             }
             button_Menu.transform.position = new Vector3(7166, 6436, 0);
-            button_Option.transform.position = new Vector3(7166, 6436, 0);
+            button_English.transform.position = new Vector3(7166, 6436, 0);
+            button_French.transform.position = new Vector3(7166, 6436, 0);
         }
 
         public int get_zinc(int team = 2)
