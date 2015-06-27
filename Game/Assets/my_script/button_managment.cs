@@ -151,7 +151,7 @@ public class button_managment : MonoBehaviour
                 this.transform.position = new Vector3(582, 42, 0);
                 break;
             default:
-                Debug.Log("bouton inconnu");
+                Debug.Log("bouton inconnu" + this.name);
                 break;
         }
     }

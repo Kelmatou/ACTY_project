@@ -625,12 +625,12 @@ public class God_char : MonoBehaviour
 
     void build_banque(int x, int z)
     {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.AddComponent<BoxCollider>();
-        cube.name = "Bank";
-        cube.transform.transform.localScale = new Vector3(3, 10, 3);
-        cube.transform.position = new Vector3(x, 5, z);
-    } //ATTENTE DU MODELE
+        GameObject exemple = GameObject.Find("mh03");
+        GameObject Bank = exemple;
+        Bank = Instantiate(exemple);
+        Bank.AddComponent<BoxCollider>();
+        Bank.transform.position = new Vector3(x, 0, z);
+    }
 
     void build_mine_zinc(int x, int z)
     {
