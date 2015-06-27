@@ -95,6 +95,11 @@ public class ressource_update : MonoBehaviour
         buildable_center();
     }
 
+    public void add_building_others(string name)
+    {
+
+    }
+
     public void buildable_mine()
     {
         if (value_zinc < 30 || value_rock < 50 || value_uranium < 0)
@@ -116,6 +121,55 @@ public class ressource_update : MonoBehaviour
         if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
         {
             Center.enabled = false;
+        }
+    }
+
+    public void buildable_others(string name)
+    {
+        switch (name)
+        {
+            case ("Bank"):
+                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                {
+                    Center.enabled = false;
+                }
+                break;
+            case ("Lab"):
+                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                {
+                    Center.enabled = false;
+                }
+                break;
+            case ("Temple"):
+                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                {
+                    Center.enabled = false;
+                }
+                break;
+            case ("Wall"):
+                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                {
+                    Center.enabled = false;
+                }
+                break;
+            case ("Caserne"):
+                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                {
+                    Center.enabled = false;
+                }
+                break;
+            case ("Donjon"):
+                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                {
+                    Center.enabled = false;
+                }
+                break;
+            case ("Tower"):
+                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                {
+                    Center.enabled = false;
+                }
+                break;
         }
     }
 
