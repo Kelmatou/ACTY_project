@@ -5,10 +5,6 @@ using UnityEngine.EventSystems;
 
 public class ressource_update : MonoBehaviour
 {
-    //GameObject ressource_text_zinc;
-    //GameObject ressource_text_rock;
-    //GameObject ressource_text_uranium;
-
     public float value_zinc;
     public float value_rock;
     public float value_uranium;
@@ -27,27 +23,18 @@ public class ressource_update : MonoBehaviour
     public Button Mine;
     public Button Carrier;
     public Button Center;
+    public Button Lab;
+    public Button Wall;
+    public Button Donjon;
+    public Button Tower;
+    public Button Temple;
+    public Button Caserne;
+    public Button Bank;
+
+    private bool bank_built = false;
 
     void Start()
     {
-        //if (this.name == "Button_Mine")
-        //{
-        //    ressource_text_zinc = GameObject.Find("Tooltip_Zinc");
-        //    Debug.Log("OK1 " + ressource_text_zinc.name);
-        //    ressource_text_zinc.GetComponentInChildren<Text>().text = value_zinc.ToString();
-        //}
-        //else if (this.name == "Button_Carrier")
-        //{
-        //    ressource_text_rock = GameObject.Find("Tooltip_Rock");
-        //    Debug.Log("OK2 " + ressource_text_rock.name);
-        //    ressource_text_rock.GetComponentInChildren<Text>().text = value_rock.ToString();
-        //}
-        //else if (this.name == "Button_Center")
-        //{
-        //    ressource_text_uranium = GameObject.Find("Tooltip_Uranium");
-        //    Debug.Log("OK3 " + ressource_text_uranium.name);
-        //    ressource_text_uranium.GetComponentInChildren<Text>().text = value_uranium.ToString();
-        //}
         Zinc.text = value_zinc.ToString();
         Debug.Log(Zinc.text);
         Rock.text = value_rock.ToString();
@@ -61,113 +48,180 @@ public class ressource_update : MonoBehaviour
         {
             update_time = Time.time + period;
 
-            value_zinc = (value_zinc + building_zinc);
-            Zinc.text = ((int)value_zinc).ToString();
-
-            value_rock = value_rock + building_rock;
-            Rock.text = value_rock.ToString();
-
-            value_uranium = value_uranium + building_uranium;
-            Uranium.text = value_uranium.ToString();
+            if (bank_built)
+            {
+                if (value_zinc < 600)
+                {
+                    value_zinc = (value_zinc + building_zinc);
+                    Zinc.text = value_zinc.ToString();
+                }
+                if (value_rock < 600)
+                {
+                    value_rock = value_rock + building_rock;
+                    Rock.text = value_rock.ToString();
+                }
+                if (value_uranium < 600)
+                {
+                    value_uranium = value_uranium + building_uranium;
+                    Uranium.text = value_uranium.ToString();
+                }
+            }
+            else
+            {
+                if (value_zinc < 300)
+                {
+                    value_zinc = (value_zinc + building_zinc);
+                    Zinc.text = value_zinc.ToString();
+                }
+                if (value_rock < 300)
+                {
+                    value_rock = value_rock + building_rock;
+                    Rock.text = value_rock.ToString();
+                }
+                if (value_uranium < 300)
+                {
+                    value_uranium = value_uranium + building_uranium;
+                    Uranium.text = value_uranium.ToString();
+                }
+            }
         }
         Debug.Log("Z: " + value_zinc + "   R: " + value_rock + "   U: " + value_uranium);
     }
 
-    public void add_building_mine()
+    public void add_building(string name)
     {
-        building_zinc++;
-        value_zinc = value_zinc - 20;
-        value_rock = value_rock - 50;
-        buildable_mine();
-    }
-    public void add_building_carrier()
-    {
-        building_rock++;
-        value_zinc = value_zinc - 60;
-        value_rock = value_uranium - 20;
-        buildable_carrier();
-    }
-    public void add_building_center()
-    {
-        building_uranium++;
-        value_zinc = value_zinc - 80;
-        value_rock = value_rock - 80;
-        buildable_center();
-    }
-
-    public void add_building_others(string name)
-    {
-
-    }
-
-    public void buildable_mine()
-    {
-        if (value_zinc < 30 || value_rock < 50 || value_uranium < 0)
+        if (Time.timeScale != 0)
         {
-            Mine.enabled = false;
+            switch (name)
+            {
+                case ("Center"):
+                    value_zinc = value_zinc - 40;
+                    value_rock = value_rock - 40;
+                    value_uranium = value_uranium - 5;
+                    building_uranium++;
+                    buildable("Center");
+                    break;
+                case ("Mine"):
+                    value_zinc = value_zinc - 20;
+                    value_rock = value_rock - 30;
+                    value_uranium = value_uranium - 20;
+                    building_zinc++;
+                    buildable("Mine");
+                    break;
+                case ("Carrier"):
+                    value_zinc = value_zinc - 30;
+                    value_rock = value_rock - 10;
+                    value_uranium = value_uranium - 20;
+                    building_rock++;
+                    buildable("Carrier");
+                    break;
+                case ("Bank"):
+                    value_zinc = value_zinc - 100;
+                    value_rock = value_rock - 100;
+                    value_uranium = value_uranium - 100;
+                    bank_built = true;
+                    buildable("Bank");
+                    break;
+                case ("Lab"):
+                    value_zinc = value_zinc - 80;
+                    value_rock = value_rock - 80;
+                    value_uranium = value_uranium - 80;
+                    buildable("Lab");
+                    break;
+                case ("Temple"):
+                    value_zinc = value_zinc - 40;
+                    value_rock = value_rock - 40;
+                    value_uranium = value_uranium - 40;
+                    buildable("Temple");
+                    break;
+                case ("Wall"):
+                    value_rock = value_rock - 30;
+                    buildable("Wall");
+                    break;
+                case ("Caserne"):
+                    value_zinc = value_zinc - 40;
+                    value_rock = value_rock - 20;
+                    value_uranium = value_uranium - 10;
+                    buildable("Caserne");
+                    break;
+                case ("Donjon"):
+                    value_zinc = value_zinc - 30;
+                    value_rock = value_rock - 20;
+                    value_uranium = value_uranium - 10;
+                    buildable("Donjon");
+                    break;
+                case ("Tower"):
+                    value_zinc = value_zinc - 30;
+                    value_rock = value_rock - 30;
+                    value_uranium = value_uranium - 15;
+                    buildable("Tower");
+                    break;
+            }
         }
     }
 
-    public void buildable_carrier()
-    {
-        if (value_zinc < 60 || value_rock < 0 || value_uranium < 20)
-        {
-            Carrier.enabled = false;
-        }
-    }
-
-    public void buildable_center()
-    {
-        if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
-        {
-            Center.enabled = false;
-        }
-    }
-
-    public void buildable_others(string name)
+    public void buildable(string name)
     {
         switch (name)
         {
-            case ("Bank"):
-                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+            case ("Center"):
+                if (value_zinc < 40 || value_rock < 40 || value_uranium < 5)
                 {
                     Center.enabled = false;
+                }
+                break;
+            case ("Mine"):
+                if (value_zinc < 20 || value_rock < 30 || value_uranium < 20)
+                {
+                    Mine.enabled = false;
+                }
+                break;
+            case ("Carrier"):
+                if (value_zinc < 30 || value_rock < 10 || value_uranium < 20)
+                {
+                    Carrier.enabled = false;
+                }
+                break;
+            case ("Bank"):
+                if (value_zinc < 100 || value_rock < 100 || value_uranium < 100 || bank_built)
+                {
+                    Bank.enabled = false;
                 }
                 break;
             case ("Lab"):
-                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                if (value_zinc < 80 || value_rock < 80 || value_uranium < 80)
                 {
-                    Center.enabled = false;
+                    Lab.enabled = false;
                 }
                 break;
             case ("Temple"):
-                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                if (value_zinc < 40 || value_rock < 40 || value_uranium < 40)
                 {
-                    Center.enabled = false;
+                    Temple.enabled = false;
                 }
                 break;
             case ("Wall"):
-                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                if (value_zinc < 0 || value_rock < 30 || value_uranium < 0)
                 {
-                    Center.enabled = false;
+                    Wall.enabled = false;
                 }
                 break;
             case ("Caserne"):
-                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                if (value_zinc < 40 || value_rock < 20 || value_uranium < 10)
                 {
-                    Center.enabled = false;
+                    Caserne.enabled = false;
                 }
                 break;
             case ("Donjon"):
-                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                if (value_zinc < 30 || value_rock < 30 || value_uranium < 10)
                 {
-                    Center.enabled = false;
+                    Donjon.enabled = false;
                 }
                 break;
             case ("Tower"):
-                if (value_zinc < 80 || value_rock < 80 || value_uranium < 0)
+                if (value_zinc < 30 || value_rock < 30 || value_uranium < 15)
                 {
-                    Center.enabled = false;
+                    Tower.enabled = false;
                 }
                 break;
         }
@@ -175,17 +229,13 @@ public class ressource_update : MonoBehaviour
 
     public void pointer_exit(Button B)
     {
-        B.enabled = true;
-    }
-
-    public void display_necessary_ressources(Button B)
-    {
-        switch (B.name)
+        if (B.name == "Button_Bank" && bank_built)
         {
-            case ("Button_Mine"):
-                
-                break;
+            B.enabled = false;
+        }
+        else
+        {
+            B.enabled = true;
         }
     }
-
 }
