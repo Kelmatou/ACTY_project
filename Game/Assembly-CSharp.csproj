@@ -53,10 +53,12 @@
      <Compile Include="Assets\my_script\Bouttons.cs" />
      <Compile Include="Assets\my_script\God_char.cs" />
      <Compile Include="Assets\my_script\IA.cs" />
+     <Compile Include="Assets\my_script\Mouse.cs" />
      <Compile Include="Assets\my_script\button_managment.cs" />
      <Compile Include="Assets\my_script\change_map.cs" />
      <Compile Include="Assets\my_script\main.cs" />
      <Compile Include="Assets\my_script\map_selection.cs" />
+     <Compile Include="Assets\my_script\ressource_update.cs" />
      <Compile Include="Assets\my_script\unit_creator.cs" />
      <Compile Include="Assets\my_script\unit_leader.cs" />
      <Compile Include="Assets\my_script\units_stat.cs" />
