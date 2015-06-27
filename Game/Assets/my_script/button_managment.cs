@@ -12,7 +12,7 @@ public class button_managment : MonoBehaviour
         {
             this.transform.position = new Vector3(80, 720, 0);
         }
-        else if (this.name == "Button_PauseFR" || this.name == "Button_unPause" || this.name == "Button_unPauseFR" || this.name == "Button_Menu" || this.name == "Button_New_Game" || this.name == "Button_New_GameFR" || this.name == "Button_Option" || this.name == "Button_Exit" || this.name == "Button_ExitFR" || this.name == "Button_English" || this.name == "Button_French")
+        else if (this.name == "Button_PauseFR" || this.name == "Button_unPause" || this.name == "Button_unPauseFR" || this.name == "Button_Menu" || this.name == "Button_New_Game" || this.name == "Button_New_GameFR" || this.name == "Button_Option" || this.name == "Button_OptionFR" || this.name == "Button_Exit" || this.name == "Button_ExitFR" || this.name == "Button_English" || this.name == "Button_French" || this.name == "Button_son" || this.name == "Button_sound" || this.name == "Button_mute" || this.name == "Button_couper")
         {
             move_out_screen();
         }
@@ -78,7 +78,7 @@ public class button_managment : MonoBehaviour
         {
             this.transform.position = new Vector3(500, 500, 0);
         }
-        else if (this.name == "Button_Option")
+        else if (this.name == "Button_Option" || this.name == "Button_OptionFR")
         {
             this.transform.position = new Vector3(500, 415, 0);
         }
@@ -88,11 +88,31 @@ public class button_managment : MonoBehaviour
         }
         else if(this.name == "Button_French")
         {
-            this.transform.position = new Vector3(250, 415, 0);
+            this.transform.position = new Vector3(260, 415, 0);
         }
         else if(this.name == "Button_English")
         {
-            this.transform.position = new Vector3(750, 415, 0);
+            this.transform.position = new Vector3(760, 415, 0);
+        }
+        else if (this.name == "Button_couper")
+        {
+            this.transform.position = new Vector3(760, 330, 0);
+            GameObject exitbutton = GameObject.Find("Button_ExitFR");
+            exitbutton.transform.position = new Vector3(500, 245, 0);
+        }
+        else if (this.name == "Button_son")
+        {
+            this.transform.position = new Vector3(260, 330, 0);
+        }
+        else if (this.name == "Button_mute")
+        {
+            this.transform.position = new Vector3(760, 330, 0);
+            GameObject exitbutton = GameObject.Find("Button_Exit");
+            exitbutton.transform.position = new Vector3(500, 245, 0);
+        }
+        else if (this.name == "Button_sound")
+        {
+            this.transform.position = new Vector3(260, 330, 0);
         }
     }
 
@@ -139,5 +159,15 @@ public class button_managment : MonoBehaviour
     public void change_language()
     {
         default_language = this.name == "Button_English";
+    }
+
+    public void mute()
+    {
+        AudioListener.volume = 0;
+    }
+
+    public void unmute()
+    {
+        AudioListener.volume = 1;
     }
 }
