@@ -2,11 +2,10 @@ Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce 840M (ID=0x1341)
+    Renderer: NVIDIA GeForce GTX 860M   (ID=0x1392)
     Vendor:   NVIDIA
-    VRAM:     1972 MB
+    VRAM:     1991 MB
 Begin MonoManager ReloadAssembly
-<<<<<<< HEAD
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
@@ -17,27 +16,13 @@ Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Manage
 Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.071 seconds
+- Completed reload, in  0.042 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
-=======
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.059 seconds
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
->>>>>>> 422620220afac3e307c1153ea9fa29d50c8d5286
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\System.dll (this message is harmless)
 The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1713)
@@ -50,24 +35,31 @@ The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1713)
 
-<<<<<<< HEAD
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 7e0 -> priority: 1 
-  Thread -> id: ec4 -> priority: 1 
+  Thread -> id: 19d0 -> priority: 1 
+  Thread -> id: 104c -> priority: 1 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
 Shader 'Nature/Terrain/Specular': dependency 'BaseMapShader' shader 'Hidden/TerrainEngine/Splatmap/Specular-Base' not found
-UnloadTime: 3.263490 ms
+UnloadTime: 3.447870 ms
 
 Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 344.
-Total: 0.535178 ms (FindLiveObjects: 0.039221 ms CreateObjectMapping: 0.017228 ms MarkObjects: 0.194277 ms  DeleteObjects: 0.284084 ms)
+Total: 0.465898 ms (FindLiveObjects: 0.021627 ms CreateObjectMapping: 0.016495 ms MarkObjects: 0.171183 ms  DeleteObjects: 0.256225 ms)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.638548 ms
+UnloadTime: 0.600059 ms
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1836.
-Total: 0.937295 ms (FindLiveObjects: 0.113267 ms CreateObjectMapping: 0.046186 ms MarkObjects: 0.507320 ms  DeleteObjects: 0.270155 ms)
+Total: 0.921533 ms (FindLiveObjects: 0.106669 ms CreateObjectMapping: 0.046186 ms MarkObjects: 0.501088 ms  DeleteObjects: 0.266856 ms)
 
-=======
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: d38 -> priority: 1 
->>>>>>> 422620220afac3e307c1153ea9fa29d50c8d5286
+pos x: 234 - pos y: 265
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+pos x: 189 - pos y: 203
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+pos x: 210 - pos y: 115
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
