@@ -6,6 +6,7 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     1972 MB
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
@@ -18,6 +19,20 @@ Platform assembly: C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\G
 Loading C:\Users\Cyril Lemaître\Documents\GitHub\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 - Completed reload, in  0.064 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+=======
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Antoine\Documents\ACTY_project\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.039 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+>>>>>>> 64943b55638c5570200473d1f13da2d230eaade7
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
@@ -35,6 +50,7 @@ The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1713)
 
+<<<<<<< HEAD
 Setting up 1 worker threads for Enlighten.
   Thread -> id: 17dc -> priority: 1 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
@@ -49,6 +65,23 @@ UnloadTime: 0.836885 ms
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1856.
 Total: 0.822674 ms (FindLiveObjects: 0.080135 ms CreateObjectMapping: 0.040660 ms MarkObjects: 0.474893 ms  DeleteObjects: 0.226590 ms)
+=======
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 16dc -> priority: 1 
+  Thread -> id: 194c -> priority: 1 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Shader 'Nature/Terrain/Specular': dependency 'BaseMapShader' shader 'Hidden/TerrainEngine/Splatmap/Specular-Base' not found
+UnloadTime: 3.733054 ms
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 346.
+Total: 0.483860 ms (FindLiveObjects: 0.027858 ms CreateObjectMapping: 0.017228 ms MarkObjects: 0.173383 ms  DeleteObjects: 0.264656 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.205251 ms
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3286.
+Total: 1.491169 ms (FindLiveObjects: 0.187312 ms CreateObjectMapping: 0.119498 ms MarkObjects: 0.847854 ms  DeleteObjects: 0.335036 ms)
+>>>>>>> 64943b55638c5570200473d1f13da2d230eaade7
 
 200
  
@@ -778,6 +811,7 @@ Z: 200   R: 150   U: 100
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
+<<<<<<< HEAD
 Z: 200   R: 150   U: 100
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
@@ -4506,3 +4540,5 @@ Z: -520   R: 126   U: -380
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
+=======
+>>>>>>> 64943b55638c5570200473d1f13da2d230eaade7
