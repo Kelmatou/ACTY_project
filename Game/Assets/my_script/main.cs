@@ -5,35 +5,6 @@ namespace Programme
 {
     public class main : MonoBehaviour
     {
-        int team1_zinc;
-        int team1_roche;
-        int team1_uranium;
-        int team1_stock_capacity;
-        int team1_unit_nbr;
-
-        int team2_zinc;
-        int team2_roche;
-        int team2_uranium;
-        int team2_stock_capacity;
-        int team2_unit_nbr;
-
-        // Use this for initialization
-        void Start()
-        {
-            team1_zinc = 50;
-            team1_roche = 100;
-            team1_uranium = 30;
-            team1_stock_capacity = 120;
-            team1_unit_nbr = 1;
-
-            team2_zinc = 50;
-            team2_roche = 100;
-            team2_uranium = 30;
-            team2_stock_capacity = 120;
-            team2_unit_nbr = 1;
-            get_zinc(1);
-        }
-
         // Update is called once per frame
         void Update()
         {
@@ -64,11 +35,11 @@ namespace Programme
         void zoom_camera()
         {
             int movespeed = 20;
-            if(Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R))
             {
                 this.transform.position = new Vector3(-1532, 1465, -1632);
             }
-            else if(Input.GetAxis("Mouse ScrollWheel") > 0) //ZOOM AVANT
+            else if (Input.GetAxis("Mouse ScrollWheel") > 0) //ZOOM AVANT
             {
                 if (this.transform.position.x <= -50 && this.transform.position.y >= 50 && this.transform.position.z <= -200)
                 {
@@ -114,8 +85,8 @@ namespace Programme
                 button_pauseFR.transform.position = new Vector3(7166, 6436, 0);
                 button_OptionFR.transform.position = new Vector3(500, 415, 0);
             }
-            
-            button_Menu.transform.position = new Vector3(500, 585, 0); 
+
+            button_Menu.transform.position = new Vector3(500, 585, 0);
         }
 
         void unpause()
@@ -132,7 +103,7 @@ namespace Programme
             GameObject button_English = GameObject.Find("Button_English");
             GameObject button_French = GameObject.Find("Button_French");
             GameObject button_son = GameObject.Find("Button_son");
-            GameObject button_couper = GameObject.Find("Button_couper");
+            GameObject button_couper = GameObject.Find("Button_muet");
             GameObject button_sound = GameObject.Find("Button_sound");
             GameObject button_mute = GameObject.Find("Button_mute");
             GameObject button_Exit = GameObject.Find("Button_Exit");
@@ -161,30 +132,6 @@ namespace Programme
             button_Menu.transform.position = new Vector3(7166, 6436, 0);
             button_English.transform.position = new Vector3(7166, 6436, 0);
             button_French.transform.position = new Vector3(7166, 6436, 0);
-        }
-
-        public int get_zinc(int team = 2)
-        {
-            if(team == 1)
-            {
-                return(team1_zinc);
-            }
-            else
-            {
-                return(team2_zinc);
-            }
-        }
-
-        public void add_zinc(int nbr, int team = 2)
-        {
-            if (team == 1)
-            {
-                team1_zinc = team1_zinc + nbr;
-            }
-            else
-            {
-                team2_zinc = team2_zinc + nbr;
-            }
         }
     }
 }

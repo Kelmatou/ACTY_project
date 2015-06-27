@@ -1,22 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class button_managment : MonoBehaviour 
+public class button_managment : MonoBehaviour
 {
     bool default_language;
 
     void Start()
     {
         default_language = true;
-        if(this.name == "Button_Pause")
+        if (this.name == "Button_Pause")
         {
             this.transform.position = new Vector3(80, 720, 0);
         }
-        else if (this.name == "Button_PauseFR" || this.name == "Button_unPause" || this.name == "Button_unPauseFR" || this.name == "Button_Menu" || this.name == "Button_New_Game" || this.name == "Button_New_GameFR" || this.name == "Button_Option" || this.name == "Button_OptionFR" || this.name == "Button_Exit" || this.name == "Button_ExitFR" || this.name == "Button_English" || this.name == "Button_French" || this.name == "Button_son" || this.name == "Button_sound" || this.name == "Button_mute" || this.name == "Button_couper")
+        else if (this.name == "Button_PauseFR" || this.name == "Button_unPause" || this.name == "Button_unPauseFR" || this.name == "Button_Menu" || this.name == "Button_New_Game" || this.name == "Button_New_GameFR" || this.name == "Button_Option" || this.name == "Button_OptionFR" || this.name == "Button_Exit" || this.name == "Button_ExitFR" || this.name == "Button_English" || this.name == "Button_French" || this.name == "Button_son" || this.name == "Button_sound" || this.name == "Button_mute" || this.name == "Button_muet")
         {
             move_out_screen();
         }
-        else if(this.name == "Tooltip_Zinc" || this.name == "Tooltip_Rock" || this.name == "Tooltip_Uranium")
+        else if (this.name == "Tooltip_Zinc" || this.name == "Tooltip_Rock" || this.name == "Tooltip_Uranium")
         {
             create_bar_mineral();
         }
@@ -28,9 +28,9 @@ public class button_managment : MonoBehaviour
 
     public void create_bar_mineral()
     {
-        switch(this.name)
+        switch (this.name)
         {
-            case("Tooltip_Zinc"):
+            case ("Tooltip_Zinc"):
                 this.transform.position = new Vector3(530, 724, 0);
                 break;
             case ("Tooltip_Rock"):
@@ -45,7 +45,7 @@ public class button_managment : MonoBehaviour
     public void move_out_screen()
     {
         this.transform.position = new Vector3(7166, 6436, 0);
-        if(this.name == "Button_Pause" && default_language)
+        if (this.name == "Button_Pause" && default_language)
         {
             Time.timeScale = 0;
         }
@@ -86,15 +86,15 @@ public class button_managment : MonoBehaviour
         {
             this.transform.position = new Vector3(500, 330, 0);
         }
-        else if(this.name == "Button_French")
+        else if (this.name == "Button_French")
         {
             this.transform.position = new Vector3(260, 415, 0);
         }
-        else if(this.name == "Button_English")
+        else if (this.name == "Button_English")
         {
             this.transform.position = new Vector3(760, 415, 0);
         }
-        else if (this.name == "Button_couper")
+        else if (this.name == "Button_muet")
         {
             this.transform.position = new Vector3(760, 330, 0);
             GameObject exitbutton = GameObject.Find("Button_ExitFR");
@@ -118,9 +118,9 @@ public class button_managment : MonoBehaviour
 
     public void creat_game_inteface()
     {
-        switch(this.name)
+        switch (this.name)
         {
-            case("Button_Donjon"):
+            case ("Button_Donjon"):
                 this.transform.position = new Vector3(42, 42, 0);
                 break;
             case ("Button_Tower"):
