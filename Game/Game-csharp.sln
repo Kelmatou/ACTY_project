@@ -1,9 +1,10 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{63D72051-E901-C069-F8AA-1B32AA0C43BB}") = "Game", "Assembly-CSharp-firstpass-vs.csproj", "{D8888F6A-ABE1-C49B-1A38-F65A81021668}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass-vs", "Assembly-CSharp-firstpass-vs.csproj", "{D8888F6A-ABE1-C49B-1A38-F65A81021668}"
 EndProject
-Project("{63D72051-E901-C069-F8AA-1B32AA0C43BB}") = "Game", "Assembly-CSharp-vs.csproj", "{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-vs", "Assembly-CSharp-vs.csproj", "{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,41 +24,16 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																										GlobalSection(MonoDevelopProperties) = preSolution
-=======
-<<<<<<< HEAD
-																																																																					GlobalSection(MonoDevelopProperties) = preSolution
-=======
-																																																																									GlobalSection(MonoDevelopProperties) = preSolution
->>>>>>> 5fe3d69403d78acbbb25504cd7cb420fd4455952
-=======
-																																																																											GlobalSection(MonoDevelopProperties) = preSolution
->>>>>>> 61d0cf2e773ab5a9f4dd7c614df70f57e5ca64ac
-=======
-<<<<<<< HEAD
-																																																																			GlobalSection(MonoDevelopProperties) = preSolution
->>>>>>> a584953e7590f6021c9bbeb46d30f65f2097b637
-=======
-																																																															GlobalSection(MonoDevelopProperties) = preSolution
-=======
-<<<<<<< HEAD
-																																																																	GlobalSection(MonoDevelopProperties) = preSolution
->>>>>>> 72de0ea3b2584e214fdc39ff2cc5ebbf044aefc6
-=======
-																																																											GlobalSection(MonoDevelopProperties) = preSolution
->>>>>>> c0186b718e855235f5f1c5f74265fee86a0066bc
->>>>>>> aaeead6bc1708608347be4a2b12152fe787df17c
->>>>>>> origin/master
+	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
-		$0.TextStylePolicy = $1
+		$0.TextStylePolicy = $3
 		$1.inheritsSet = null
 		$1.scope = text/x-csharp
 		$0.CSharpFormattingPolicy = $2
 		$2.inheritsSet = Mono
 		$2.inheritsScope = text/x-csharp
 		$2.scope = text/x-csharp
-		$0.TextStylePolicy = $3
 		$3.FileWidth = 120
 		$3.TabWidth = 4
 		$3.IndentWidth = 4
@@ -66,5 +42,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
 EndGlobal
