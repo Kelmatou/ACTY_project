@@ -16,10 +16,18 @@ public class unit_creator : MonoBehaviour
         {
             if (timer == 0)
             {
-                GameObject exemple = GameObject.Find("Player");
+                GameObject exemple;
+                if (Random.value < 0.5)
+                {
+                    exemple = GameObject.Find("Player");
+                }
+                else
+                {
+                    exemple = GameObject.Find("archer_version_3");
+                }
                 GameObject unit = exemple;
-                unit.name = "Player";
                 unit = Instantiate(exemple);
+                unit.name = "Player";
                 unit.AddComponent<BoxCollider>();
                 unit.AddComponent<units_stat>();
                 unit.AddComponent<IA>();

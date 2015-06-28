@@ -634,12 +634,12 @@ public class God_char : MonoBehaviour
 
     void build_mine_zinc(int x, int z)
     {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.AddComponent<BoxCollider>();
-        cube.name = "Mine";
-        cube.transform.transform.localScale = new Vector3(2, 6, 2);
-        cube.transform.position = new Vector3(x, 3, z);
-    } //ATTENTE DU MODELE
+        GameObject exemple = GameObject.Find("20066_Factory");
+        GameObject Zinc = exemple;
+        Zinc = Instantiate(exemple);
+        Zinc.AddComponent<BoxCollider>();
+        Zinc.transform.position = new Vector3(x, 0, z);
+    }
 
     void build_carriere_roche_volcanique(int x, int z)
     {
