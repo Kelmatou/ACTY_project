@@ -65,9 +65,36 @@ public class ressource_update : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
-            value_zinc = value_zinc + 100;
-            value_rock = value_rock + 100;
-            value_uranium = value_uranium + 100;
+            if(value_zinc <= max_capacity - 100)
+            {
+                value_zinc = value_zinc + 100;
+                
+            }
+            else
+            {
+                value_zinc = max_capacity;
+            }
+            if (value_rock <= max_capacity - 100)
+            {
+                value_rock = value_rock + 100;
+            }
+            else
+            {
+                value_rock = max_capacity;
+            }
+            if (value_uranium <= max_capacity - 100)
+            {
+                value_uranium = value_uranium + 100;
+            }
+            else
+            {
+                value_uranium = max_capacity;
+            }
+
+            Zinc.text = value_zinc.ToString();
+            Rock.text = value_rock.ToString();
+            Uranium.text = value_uranium.ToString();
+            
         }
         Debug.Log("Z: " + value_zinc + "   R: " + value_rock + "   U: " + value_uranium + "   MAX: " + max_capacity);
     }
