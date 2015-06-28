@@ -10,7 +10,7 @@ public class units_stat : MonoBehaviour
 
 	void Start () 
     {
-        life = 100;
+        life = 40;
         armor = 10;
         damage = 35;
         timer = 700;
