@@ -598,12 +598,12 @@ public class God_char : MonoBehaviour
 
     void build_rempart(int x, int z)
     {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.AddComponent<BoxCollider>();
-        cube.name = "Wall";
-        cube.transform.transform.localScale = new Vector3(1, 12, 1);
-        cube.transform.position = new Vector3(x, 6, z);
-    } //ATTENTE DU MODELE
+        GameObject exemple = GameObject.Find("murprojet");
+        GameObject Wall = exemple;
+        Wall = Instantiate(exemple);
+        Wall.AddComponent<BoxCollider>();
+        Wall.transform.position = new Vector3(x, 0, z);
+    }
 
     void build_temple(int x, int z)
     {
@@ -652,10 +652,10 @@ public class God_char : MonoBehaviour
 
     void build_centre_extraction_uranium(int x, int z)
     {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.AddComponent<BoxCollider>();
-        cube.name = "Center";
-        cube.transform.transform.localScale = new Vector3(2, 8, 2);
-        cube.transform.position = new Vector3(x, 4, z);
-    } //ATTENTE DU MODELE
+        GameObject exemple = GameObject.Find("well");
+        GameObject Uranium = exemple;
+        Uranium = Instantiate(exemple);
+        Uranium.AddComponent<BoxCollider>();
+        Uranium.transform.position = new Vector3(x, 0, z);
+    }
 }
