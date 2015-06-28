@@ -31,12 +31,12 @@ public class ressource_update : MonoBehaviour
     public Button Caserne;
     public Button Bank;
 
-    private bool bank_built = false;
+    private int max_capacity;
 
     void Start()
     {
+        max_capacity = 300;
         Zinc.text = value_zinc.ToString();
-        Debug.Log(Zinc.text);
         Rock.text = value_rock.ToString();
         Uranium.text = value_uranium.ToString();
     }
@@ -47,45 +47,29 @@ public class ressource_update : MonoBehaviour
         if (Time.time > update_time)
         {
             update_time = Time.time + period;
-
-            if (bank_built)
+            if (value_zinc < max_capacity)
             {
-                if (value_zinc < 600)
-                {
-                    value_zinc = (value_zinc + building_zinc);
-                    Zinc.text = value_zinc.ToString();
-                }
-                if (value_rock < 600)
-                {
-                    value_rock = value_rock + building_rock;
-                    Rock.text = value_rock.ToString();
-                }
-                if (value_uranium < 600)
-                {
-                    value_uranium = value_uranium + building_uranium;
-                    Uranium.text = value_uranium.ToString();
-                }
+                value_zinc = (value_zinc + building_zinc);
+                Zinc.text = value_zinc.ToString();
             }
-            else
+            if (value_rock < max_capacity)
             {
-                if (value_zinc < 300)
-                {
-                    value_zinc = (value_zinc + building_zinc);
-                    Zinc.text = value_zinc.ToString();
-                }
-                if (value_rock < 300)
-                {
-                    value_rock = value_rock + building_rock;
-                    Rock.text = value_rock.ToString();
-                }
-                if (value_uranium < 300)
-                {
-                    value_uranium = value_uranium + building_uranium;
-                    Uranium.text = value_uranium.ToString();
-                }
+                value_rock = value_rock + building_rock;
+                Rock.text = value_rock.ToString();
+            }
+            if (value_uranium < max_capacity)
+            {
+                value_uranium = value_uranium + building_uranium;
+                Uranium.text = value_uranium.ToString();
             }
         }
-        Debug.Log("Z: " + value_zinc + "   R: " + value_rock + "   U: " + value_uranium);
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            value_zinc = value_zinc + 100;
+            value_rock = value_rock + 100;
+            value_uranium = value_uranium + 100;
+        }
+        Debug.Log("Z: " + value_zinc + "   R: " + value_rock + "   U: " + value_uranium + "   MAX: " + max_capacity);
     }
 
     public void add_building(string name)
@@ -119,7 +103,7 @@ public class ressource_update : MonoBehaviour
                     value_zinc = value_zinc - 100;
                     value_rock = value_rock - 100;
                     value_uranium = value_uranium - 100;
-                    bank_built = true;
+                    max_capacity = max_capacity + 200;
                     buildable("Bank");
                     break;
                 case ("Lab"):
@@ -183,7 +167,7 @@ public class ressource_update : MonoBehaviour
                 }
                 break;
             case ("Bank"):
-                if (value_zinc < 100 || value_rock < 100 || value_uranium < 100 || bank_built)
+                if (value_zinc < 100 || value_rock < 100 || value_uranium < 100)
                 {
                     Bank.enabled = false;
                 }
@@ -229,13 +213,6 @@ public class ressource_update : MonoBehaviour
 
     public void pointer_exit(Button B)
     {
-        if (B.name == "Button_Bank" && bank_built)
-        {
-            B.enabled = false;
-        }
-        else
-        {
-            B.enabled = true;
-        }
+        B.enabled = true;
     }
 }
